@@ -1,10 +1,29 @@
+body{
+	background-color: #30336b;
+}
 .social-links{
 	position: fixed;
 	color: black;
 	font-size: 35px;
-	top: 50px;
-	right: 0px;
+	bottom: 50px;
+	right: 5px;
+	animation-name: show_social_icons;
+  	animation-duration: 2s;
 }
 .link-item:hover{
 	color: cyan;
+	border-right: 2px solid;
+}
+@keyframes grow_social_icons {
+	from {
+		font-size: 35px;
+	}
+	to {
+		font-size: 40px;
+	}
+  }
+
+@keyframes show_social_icons{
+	from{right: -50px;}
+	to {right: 5px}
 }
