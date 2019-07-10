@@ -1,5 +1,8 @@
+html{
+	scroll-behavior: smooth;
+}
 body{
-	background-color: #30336b;
+	background-color: #130f40;
 }
 a:hover{
 	text-decoration: none;
@@ -7,23 +10,25 @@ a:hover{
 .social-links{
 	position: fixed;
 	color: black;
-	font-size: 35px;
 	bottom: 50px;
 	right: 5px;
 	animation-name: show_social_icons;
-  	animation-duration: 2s;
+	animation-duration: 2s;
+}
+.link-item{
+	border-right: 2px solid #130f40;
+	font-size: 35px;
+	/* border-right: 2px solid #30336b; */
 }
 .link-item:hover{
 	color: cyan;
-	border-right: 2px solid;
+	border-right: 2px solid cyan;
+	/* animation-name: grow_social_icons;
+	animation-duration: 2s; */
 }
 @keyframes grow_social_icons {
-	from {
-		font-size: 35px;
-	}
-	to {
-		font-size: 40px;
-	}
+	from {font-size: 35px;}
+	to {font-size: 45px;}
   }
 
 @keyframes show_social_icons{
@@ -33,6 +38,9 @@ a:hover{
 .info{
 	color: #ffbe76;
 }
-a{
-	
+.name{
+	font-size: 100px;
+	color: #95afc0;
+	font-family: Graphik, Verdana, sans-serif;
+	font-weight: 400;
 }
