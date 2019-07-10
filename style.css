@@ -1,6 +1,9 @@
 body{
 	background-color: #30336b;
 }
+a:hover{
+	text-decoration: none;
+}
 .social-links{
 	position: fixed;
 	color: black;
@@ -26,4 +29,10 @@ body{
 @keyframes show_social_icons{
 	from{right: -50px;}
 	to {right: 5px}
+}
+.info{
+	color: #ffbe76;
+}
+a{
+	
 }
