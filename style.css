@@ -92,3 +92,13 @@ a:hover{
 	color: rgb(100, 255, 218);
 	background-color: rgba(100,255,218,0.2);
 }
+.unicorn{
+	left: 10px;
+	position: relative;
+	animation-name: left-in;
+	animation-duration: 2s;
+}
+@keyframes left-in{
+	from {left:-100px;}
+	to {left:10px;}
+}
