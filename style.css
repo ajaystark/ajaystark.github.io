@@ -6,10 +6,8 @@ body{
 }
 a{
 	color:#686de0;
-	font-family: 'Inconsolata';
 }
 a:hover{
-	color:  #a55eea;
 	text-decoration: none;
 }
 .social-links{
@@ -36,7 +34,7 @@ a:hover{
   }
 
 @keyframes show_social_icons{
-	from{right: -50px;}
+	from{right: -100px;}
 	to {right: 5px}
 }
 .info{
@@ -44,12 +42,6 @@ a:hover{
 	font-size: 20px;
 	font-family: 'Inconsolata', monospace;
 	transform: translate(20px,20px);
-}
-.name{
-	font-size: 100px;
-	color: rgb(230,240,255);
-	font-family: Graphik, Verdana, sans-serif;
-	font-weight: 400;
 }
 @font-face {
   font-family: 'Inconsolata';
@@ -94,11 +86,25 @@ a:hover{
 }
 .unicorn{
 	left: 10px;
+	top: 20px;
 	position: relative;
 	animation-name: left-in;
 	animation-duration: 2s;
 }
 @keyframes left-in{
-	from {left:-100px;}
+	from {left:-200px;}
 	to {left:10px;}
+}
+.contact{
+	font-size: 110px;
+	color: rgb(230,240,255);
+	font-weight: 700;
+}
+.lets-talk{
+	color: #fc5c65;
+	text-decoration: line-through;
+}
+.lets-talk:hover{
+	color: #fc5c65;
+	text-decoration: none;
 }
