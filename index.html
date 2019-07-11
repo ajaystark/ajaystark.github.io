@@ -1,16 +1,25 @@
 <!DOCTYPE html5>
 <head>
-	<title>Hello There</title>
+    <title>Hello There</title>
+    <link rel="icon" href="./images/ghost_emoji.png" type="image/png">
 	<link rel="stylesheet" href="templates/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="templates/fontawesome/css/all.css">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar justify-content-end py-3">
-			<a href="#" class="px-3">About</a>
-			<a href="#" class="px-3">Experience</a>
-			<a href="#" class="px-3">Projects</a>
-			<a href="#" class="px-3">Contact</a>
+	<nav class="navbar justify-content-between py-3 mr-5">
+        <div class="navbar-logo">
+            <!-- <i class="fa fa-dragon navbar-brand" style="font-size: 50px; color:#fa8231;"></i> -->
+            <img src="./images/unicorn.png" alt="purple unicorn" height="90px" width="144px">
+        </div>
+        <div class="navbar-items">
+            <a href="#" class="px-4">About</a>
+            <a href="#" class="px-4">Experience</a>
+            <a href="#" class="px-4">Projects</a>
+            <a href="#" class="px-4">Contact</a>
+            <a href="JavaScript:Void(0)" onclick="on()" class="resume p-2 mx-3">Resume</a>
+        </div>
     </nav>
     <div class="social-links d-flex flex-column">
         <a href="https://github.com/ajaystark" class="link-item"><i class="fab fa-github m-2 fa-fw"></i></a>
@@ -20,8 +29,11 @@
 	<div class="container h-100 pt-5">
         <div class="info">Hii,I am</div>
         <div class="name">Ajay Prakash</div>
-	</div>
+        <div class="inconsolata college">CSAM Undergrad at IIIT-Delhi</div>
+    </div>
+    <div id="overlay" onclick="off()" class="w-100 text-center"><embed src="resume.pdf" type="application/pdf" width="45%" height="100%" /></div>
 </body>
+<script src="script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
