@@ -168,4 +168,20 @@ a:hover{
 	.info{
 		transform: translate(0px,5px);
 	}
+	.social-links{
+		position: fixed;
+		color: black;
+		bottom: 10px;
+		right: 0px;
+		font-size: 35px;
+		animation-name: show_social_icons;
+		animation-duration: 2s;
+	}
+	@keyframes show_social_icons{
+		from{right: -100px;}
+		to {right: 0px}
+	}
+	.resume{
+		right: 10px;
+	}
 }
