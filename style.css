@@ -101,8 +101,6 @@ a:hover{
 }
 .unicorn:hover{
 	animation: turn-grey 3s,go-away 8s;
-	/* cursor: -webkit-grab; 
-	cursor: grab; */
 	cursor: help;
 	filter:grayscale(100%);
 }
@@ -123,6 +121,7 @@ a:hover{
 	font-size: 110px;
 	color: rgb(230,240,255);
 	font-weight: 700;
+	line-height: 150px;	
 }
 .lets-talk{
 	color: #fc5c65;
@@ -138,12 +137,35 @@ a:hover{
 }
 @media only screen and (max-width: 600px) {
 	.unicorn{
+		left: 2px;
+		top: 20px;
 		position: relative;
+		animation-name: left-in;
+		animation-duration: 2.5s;
+	}
+	.unicorn:hover{
+		animation: turn-grey 3s,go-away 8s;
+		cursor: help;
+		filter:grayscale(100%);
+	}
+	
+	@keyframes go-away{
+		from {left: 2px;}
+		to {left:-200px;}
+	}
+	@keyframes turn-grey{
+		from {filter:grayscale(0%);}
+		to {filter:grayscale(100%);}
+	}
+	@keyframes left-in{
+		from {left:-200px;}
+		to {left:2px;}
 	}
 	.contact{
 		font-size: 50px;
+		line-height: 60px;
 	}
 	.info{
-		transform: translate(0px,0px);
+		transform: translate(0px,5px);
 	}
 }
