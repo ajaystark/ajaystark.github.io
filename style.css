@@ -4,9 +4,6 @@ html{
 body{
 	background-color: #130f40;
 }
-a{
-	color:#686de0;
-}
 a:hover{
 	text-decoration: none;
 }
@@ -20,11 +17,13 @@ a:hover{
 	animation-duration: 2s;
 }
 .link-item{
+	color:#686de0;
 	border-right: 2px solid #130f40;
 	/* border-right: 2px solid #30336b; */
 }
 .link-item:hover{
 	border-right: 2px solid #a55eea;
+	color: #a55eea;
 	/* animation-name: grow_social_icons;
 	animation-duration: 2s; */
 }
@@ -41,7 +40,7 @@ a:hover{
 	color: #ffbe76;
 	font-size: 20px;
 	font-family: 'Inconsolata', monospace;
-	transform: translate(20px,20px);
+	transform: translate(0px,20px);
 }
 @font-face {
   font-family: 'Inconsolata';
@@ -53,7 +52,7 @@ a:hover{
 }
 .navbar-items{
 	font-size: 18px;
-	animation-name: show;
+	/* animation-name: show; */
 }
 .college{
 	font-size: 20px;
@@ -79,21 +78,46 @@ a:hover{
 	border: 1px solid rgb(100, 255, 218);
 	color: rgb(100, 255, 218);
 	font-size: 18px;
+	position: relative;
+	top: 40px;
+	right: 20px;
+	animation-name: top-in;
+	animation-duration: 3s;
+}
+@keyframes top-in{
+	from {top:-100px;}
+	to {top:40px;}
 }
 .resume:hover{
 	color: rgb(100, 255, 218);
 	background-color: rgba(100,255,218,0.2);
 }
 .unicorn{
-	left: 10px;
+	left: 30px;
 	top: 20px;
-	position: relative;
+	position: fixed;
 	animation-name: left-in;
-	animation-duration: 2s;
+	animation-duration: 2.5s;
+}
+.unicorn:hover{
+	animation: turn-grey 3s,go-away 8s;
+	/* cursor: -webkit-grab; 
+	cursor: grab; */
+	cursor: help;
+	filter:grayscale(100%);
+}
+
+@keyframes go-away{
+	from {left: 30px;}
+	to {left:-200px;}
+}
+@keyframes turn-grey{
+	from {filter:grayscale(0%);}
+	to {filter:grayscale(100%);}
 }
 @keyframes left-in{
 	from {left:-200px;}
-	to {left:10px;}
+	to {left:30px;}
 }
 .contact{
 	font-size: 110px;
@@ -107,4 +131,19 @@ a:hover{
 .lets-talk:hover{
 	color: #fc5c65;
 	text-decoration: none;
+}
+@keyframes show{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@media only screen and (max-width: 600px) {
+	.unicorn{
+		position: relative;
+	}
+	.contact{
+		font-size: 50px;
+	}
+	.info{
+		transform: translate(0px,0px);
+	}
 }
