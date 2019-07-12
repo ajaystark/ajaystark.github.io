@@ -6,6 +6,7 @@ body{
 }
 a:hover{
 	text-decoration: none;
+	color: #a55eea;
 }
 .social-links{
 	position: fixed;
@@ -135,6 +136,40 @@ a:hover{
 	from{opacity: 0;}
 	to{opacity: 1;}
 }
+.headings{
+	color: rgb(100, 255, 218);
+	font-size: 25px;
+	font-weight: 500;
+}
+.content{
+	color: #ffbe76;
+	font-size: 20px;
+	font-family: 'Inconsolata';
+}
+.subtitle{
+	font-size: 45px;
+	color: rgb(136, 146, 176);
+	font-weight: 500;
+}
+.show-button{
+	font-size: 15px;
+	background-color:#130f40;
+	border: none;
+	color: rgb(100, 255, 218);
+}
+.hide{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
 	.unicorn{
 		left: 2px;
@@ -183,5 +218,8 @@ a:hover{
 	}
 	.resume{
 		right: 10px;
+	}
+	.subtitle{
+		font-size: 25px;
 	}
 }

@@ -9,6 +9,10 @@ function off() {
   document.body.scroll="yes";
   document.body.style.overflow="visible";
 }
+function show_story(){
+    $('.story').css('display','block');
+    $('.show-button').addClass('hide');
+}
 $(document).ready(function(){
     
     // Add smooth scrolling to all links
