@@ -41,7 +41,7 @@ a:hover{
 	color: #ffbe76;
 	font-size: 20px;
 	font-family: 'Inconsolata', monospace;
-	transform: translate(0px,20px);
+	/* transform: translate(0px,20px); */
 }
 .navbar-items{
 	font-size: 18px;
@@ -172,13 +172,27 @@ a:hover{
 	height: 75px;
 	width: 75px;
 	border-radius: 10%;
+	position: relative;
+}
+.xl{
+	position: absolute;
+	height: 350px;
+	width: 350px;
+	border-radius: 10%;
+}
+.blue{
+	background-color: #45aaf2;
 }
 .square:hover{
 	animation: turn-grey 3s;
 }
-@font-face{
-	font-family: 'Inconsolata';
-	src: url("templates/fonts/Inconsolata-Regular.ttf") format('ttf');
+.fade-up{
+	animation-name: fade-up;
+}
+@keyframes fade-up{
+	from{transform:translate(0px,100px); opacity: 0; }
+	to {transform:translate(0px,0px); opacity: 1;}
+
 }
 
 
@@ -187,7 +201,7 @@ a:hover{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 	.unicorn{
 		left: 2px;
 		top: 20px;
@@ -216,9 +230,6 @@ a:hover{
 	.contact{
 		font-size: 50px;
 		line-height: 60px;
-	}
-	.info{
-		transform: translate(0px,5px);
 	}
 	.social-links{
 		position: fixed;

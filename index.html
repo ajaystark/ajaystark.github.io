@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
     <div class="w-100 d-flex justify-content-between">
@@ -38,13 +39,14 @@
         <a href="https://www.instagram.com/ajay5tark/" class="link-item"><i class="fab fa-instagram m-md-2 m-1 fa-fw"></i></span></a>
         <a href="https://www.facebook.com/profile.php?id=100005349283817" class="link-item"><i class="fab fa-facebook m-md-2 m-1 fa-fw "></i></a>
     </div>
+    <div class="blue xl  d-md-block d-none" style="transform: translate(900px,-250px) rotate(45deg);" data-rellax-speed="-10"></div>
 	<div class="container h-100 pt-md-5 pt-3">
         <div class="py-5 d-md-block d-none"></div>
         <div class="py-5 my-5">
-            <div class="info rellax" data-rellax-speed=10 style="transform: translate(0px,20px)">Hii,I am</div>
-            <div class="contact rellax" data-rellax-speed=5>Ajay Prakash </div>
-            <div class="inconsolata college rellax" data-rellax-speed=4>CSAM Undergrad at IIIT-Delhi</div>
-            <div class="subtitle rellax" data-rellax-speed=3>Eat Sleep Code Repeat.</div>
+            <div class="info rellax fade-up" data-rellax-speed=10 style="animation-duration: 2s;">Hii,I am</div>
+            <div class="contact rellax fade-up" data-rellax-speed=5 style="animation-duration: 4s;">Ajay Prakash </div>
+            <div class="inconsolata college rellax fade-up" data-rellax-speed=4 style="animation-duration: 5s;">CSAM Undergrad at IIIT-Delhi</div>
+            <div class="subtitle rellax fade-up" data-rellax-speed=3 style="animation-duration: 6s;">Eat Sleep Code Repeat.</div>
         </div>
 
         <div class="cookie-banner d-inline-flex rellax" data-rellax-speed=5>
@@ -58,7 +60,7 @@
         <div class="square red lg rellax" style="transform: translate(-200px,100px) rotate(45deg);" data-rellax-speed="-5"></div>
         <div class="py-5 my-5 d-md-block d-none"></div>
         <div class="py-5 my-5"></div>
-        <div class=" py-5">
+        <div class="py-5 scroll-animation">
             <span class="headings">About me</span> 
             <br>
             <br>
@@ -77,7 +79,7 @@
                 </div>
             </div>
             <div>
-                <a href="JavaScript:Void(0)" onclick="show_story()" class="show-button">Full Story</a>
+                <a href="JavaScript:Void(0)" onclick="show_story()" class="show-button hide">Full Story</a>
             </div>
             <br>
             <div class="content story hide">It all started with a chat bot in class 10th. <br> We Used to go to computer class only to play games.
@@ -91,7 +93,7 @@
         <div class="py-5 my-5 d-md-block d-none"></div>
         <div class="py-5 my-5 d-md-block d-none"></div>
 
-        <div class="contact py-5">
+        <div class="contact py-5 scroll-animation">
             <span>I'm always <br> interested in learning new stuff.Are you minding a project?</span>
             <br>
             <a class="lets-talk" href="mailto:ajay18215@iiitd.ac.in">Let's Talk</a>
@@ -103,6 +105,7 @@
 <script src="script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="templates/rellax.min.js"></script>
+<!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 <script>
     // Accepts any class name
     var rellax = new Rellax('.rellax');
