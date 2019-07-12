@@ -160,8 +160,29 @@ a:hover{
 .hide{
 	display: none;
 }
-
-
+.cookies{
+	text-decoration: line-through;
+	color: rgb(100, 255, 218);
+}
+.cookies:hover{
+	text-decoration: none;
+	color: rgb(100, 255, 218);
+}
+.text{
+	font-size: 15px;
+	color: rgb(100, 255, 218);
+}
+.red{
+	background-color: #eb3b5a;
+}
+.square1{
+	/* transform: translate3d(0,0,0) rotate(45deg); */
+}
+.sm{
+	height: 30px;
+	width: 30px;
+	border-radius: 10%;
+}
 
 
 
@@ -218,6 +239,11 @@ a:hover{
 	}
 	.resume{
 		right: 10px;
+		top: 50px;
+	}
+	@keyframes top-in{
+		from {top:-100px;}
+		to {top:50px;}
 	}
 	.subtitle{
 		font-size: 25px;
