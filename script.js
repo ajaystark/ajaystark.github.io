@@ -13,4 +13,4 @@ function show_story(){
     $('.story').css('display','block');
     $('.show-button').addClass('hide');
 }
-ScrollReveal().reveal('.scroll-animation',{delay:500,distance:"100px",opacity:0,duration:1000});
+ScrollReveal().reveal('.scroll-animation',{delay:500,distance:"200px",opacity:0,duration:1000});
