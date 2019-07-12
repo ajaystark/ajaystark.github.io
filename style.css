@@ -18,7 +18,7 @@ a:hover{
 	animation-duration: 2s;
 }
 .link-item{
-	color:#686de0;
+	color:#45aaf2;
 	border-right: 2px solid #130f40;
 	/* border-right: 2px solid #30336b; */
 }
@@ -167,24 +167,57 @@ a:hover{
 }
 .red{
 	background-color: #eb3b5a;
+	color: #eb3b5a;
+	font-size: 12px;
+}
+.green-hollow{
+	border: 15px solid #20bf6b;
+}
+.md-hollow{
+	position: absolute;
+	border-radius: 40%;
+	top: 50px;
+	right: 50px;
+	z-index: -1;
 }
 .lg{
+	height: 80px;
+	width: 80px;
+}
+.md-solid-green{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	border-radius: 10%;
+	top: 50px;
+	right: 50px;
+	z-index: -1;
+	background-color: #0fb9b1;
+}
+.md{
 	height: 75px;
 	width: 75px;
+}
+.border-10{
 	border-radius: 10%;
+}
+.relative{
 	position: relative;
 }
 .xl{
 	position: absolute;
-	height: 350px;
-	width: 350px;
+	height: 400px;
+	width: 400px;
 	border-radius: 10%;
 }
 .blue{
 	background-color: #45aaf2;
 }
+.purple-hollow{
+	border: 18px solid #8854d0;
+}
 .square:hover{
-	animation: turn-grey 3s;
+	animation: change-color 3s;
 }
 .fade-up{
 	animation-name: fade-up;
@@ -192,8 +225,12 @@ a:hover{
 @keyframes fade-up{
 	from{transform:translate(0px,100px); opacity: 0; }
 	to {transform:translate(0px,0px); opacity: 1;}
-
 }
+@keyframes change-color{
+	from {background-color: #eb3b5a;}
+	to {background-color: #f7b731;}
+}
+
 
 
 
