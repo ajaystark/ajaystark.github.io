@@ -40,7 +40,8 @@ a:hover{
 .info{
 	color: #ffbe76;
 	font-size: 20px;
-	font-family: 'Inconsolata', monospace;
+	font-weight: 500;
+	/* font-family: 'Inconsolata', monospace; */
 	/* transform: translate(0px,20px); */
 }
 .navbar-items{
@@ -50,6 +51,7 @@ a:hover{
 .college{
 	font-size: 20px;
 	color: #ffbe76;
+	font-weight: 500;
 }
 .inconsolata{
 	font-family: 'Inconsolata';
@@ -241,8 +243,19 @@ a:hover{
 	from {background-color: #eb3b5a;}
 	to {background-color: #f7b731;}
 }
-
-
+.work-heading{
+	font-size: 50px;
+	font-weight: 700;
+	color: #fc5c65;
+}
+.work-info{
+	font-size: 20px;
+	font-weight: 500;
+	color: #d1d8e0;
+}
+.work-sub{
+	font-size: 25px;
+}
 
 
 
@@ -250,6 +263,15 @@ a:hover{
 
 
 @media only screen and (max-width: 768px) {
+	.work-heading{
+		font-size: 20px;
+	}
+	.work-info{
+		font-size: 15px;
+	}
+	.work-sub{
+		font-size: 12px;
+	}
 	.unicorn{
 		left: 2px;
 		top: 20px;
