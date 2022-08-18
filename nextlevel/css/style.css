@@ -249,7 +249,6 @@ overflow:visible;
 	
 	.logo-smaller div#logo {
 	width: 150px;
-	height:30px;
 	line-height: 65px;
 	font-size: 30px;
 	}
@@ -7688,5 +7687,8 @@ display:table;
 
 }
 .logo{
-	height:30px;
+	height:80px;
+}
+.logo-small{
+	height:80px;
 }
