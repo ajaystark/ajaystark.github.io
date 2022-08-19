@@ -237,7 +237,7 @@ overflow:visible;
 	}
 	header.smaller:not(.header-bottom):not(.side-header){
 	height: 70px;
-	background:#101010;
+	background:#fbFcfe;
 	}
 	header.smaller.no-border:not(.header-bottom):not(.side-header){
 	border:none;
@@ -1164,8 +1164,8 @@ overflow:visible;
 /* footer */
 /* ================================================== */
 footer {
-	background: #101010;
-	color: #ccc;
+	background: #fbfcfe;
+	color: black;
 	padding: 80px 0 0 0;
 	}
 	
@@ -3476,7 +3476,7 @@ border:solid 1px #ddd;
 	}
 	.social-icons i{
 	text-shadow:none;
-	color: #fff;
+	color: black;
 	padding: 8px;
 	width: 28px;
 	height: 28px;
@@ -5467,7 +5467,7 @@ color:#606060;
 
 .wm.dark.wm-border{
 	font-size:280px;
-	color:rgba(0,0,0,0);
+	color:rgba(0,0,0,0.5);
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: rgba(255,255,255,.2);
 }
