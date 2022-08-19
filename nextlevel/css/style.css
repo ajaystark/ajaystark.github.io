@@ -7693,5 +7693,5 @@ display:table;
 	height:80px;
 }
 .id-white{
-	color:#f1c40f
+	color:var(--primary-color-1);;
 }
