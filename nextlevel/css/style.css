@@ -64,7 +64,7 @@ body {
 }
 
 body.de_light,.de_light{
-	color:#777777;
+	color:white;
 }
 
 .rtl,
@@ -989,7 +989,7 @@ overflow:visible;
 	font-family:FontAwesome;
 	content: "\f0c9";
 	font-size:24px;
-	color:#eceff3;
+	color:black;
 	}
 	
 	.header-light #menu-btn:before{
@@ -1259,7 +1259,7 @@ footer {
 
 	header.header-mobile{
 	position:relative;
-	background:#111;
+	background:#fff;
 	z-index:1000;
 	}
 	
@@ -7276,7 +7276,7 @@ display:table;
 	}
 	
 	header.header-mobile #mainmenu li a{
-	color:#eceff3;
+	color:black;
 	}
 	
 	header.header-mobile.header-light #mainmenu li a{
