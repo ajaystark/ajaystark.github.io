@@ -532,7 +532,7 @@ overflow:visible;
 	
 	#mainmenu a,
 	header.transparent.header-light #mainmenu a{
-	color:#fff;
+	color:var(--secondary-color);
 	}
 	
 	#mainmenu li a:after { float:right; position:relative; font-family:"FontAwesome"; content:"\f111"; font-size:6px; margin-left:20px; margin-top:0px; color:#FAB702; }
@@ -7693,5 +7693,8 @@ display:table;
 	height:80px;
 }
 .id-white{
-	color:var(--primary-color-1);;
+	color:var(--primary-color-1);
+}
+.id-sec{
+	color:var(--secondary-color) !important;
 }
