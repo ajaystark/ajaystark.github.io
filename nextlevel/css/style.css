@@ -64,7 +64,7 @@ body {
 }
 
 body.de_light,.de_light{
-	color:white;
+	color:#003CBC;
 }
 
 .rtl,
@@ -5467,7 +5467,7 @@ color:#606060;
 
 .wm.dark.wm-border{
 	font-size:280px;
-	color:rgba(0,0,0,0.5);
+	color:#025EED;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: rgba(255,255,255,.2);
 }
@@ -6473,7 +6473,7 @@ transition:.5s;
 }
 .schedule-item .sc-name span {
 	font-weight: normal;
-	font-size: 12px;
+	font-size: 15px;
 }
 .schedule-item .sc-info {
 	float: none;
