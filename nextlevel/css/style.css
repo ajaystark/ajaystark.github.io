@@ -6463,7 +6463,7 @@ transition:.5s;
 .schedule-item .sc-name {
 	font-weight: normal;
 	font-size: 14px;
-	width: 160px;
+	width: 200px;
 	padding-top: 15px;
 }
 .schedule-item .sc-name h4 {
@@ -7697,4 +7697,9 @@ display:table;
 }
 .id-sec{
 	color:var(--secondary-color) !important;
+}
+
+.schedule-map{
+	max-height:750px;
+	overflow-y:scroll;
 }
