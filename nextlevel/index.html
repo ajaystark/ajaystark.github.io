@@ -1189,10 +1189,9 @@
 
     $(function () {
     $(document).scroll(function () {
-
-        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var touchDevice = ('ontouchstart' in document.documentElement);
         
-    if (!isMobile) {
+    if (!touchDevice) {
 
         var $nav = $("#main-logo");
         if($(this).scrollTop() > $nav.height()){
