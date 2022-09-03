@@ -78,7 +78,8 @@
                         <!-- logo begin -->
                         <div id="logo">
                             <a href="index.html">
-                                <img class="logo" id="main-logo" src="images-event/logo1.png" alt="">
+                                <img class="logo d-md-block d-none" id="main-logo" src="images-event/logo1.png" alt="">
+                                <img class="logo d-md-none d-block" src="images-event/logo.png" alt="">
                             </a>
                         </div>
                         <!-- logo close -->
@@ -1189,21 +1190,13 @@
 
     $(function () {
     $(document).scroll(function () {
-    var touchDevice = ('ontouchstart' in document.documentElement);
         
-    if (!touchDevice) {
-
-        var $nav = $("#main-logo");
-        if($(this).scrollTop() > $nav.height()){
-            $('#main-logo').attr('src','images-event/logo.png');
-        } else {
-            $('#main-logo').attr('src','images-event/logo1.png');
-        }
-     }
-     else{
-        
+    var $nav = $("#main-logo");
+    if($(this).scrollTop() > $nav.height()){
         $('#main-logo').attr('src','images-event/logo.png');
-     }
+    } else {
+        $('#main-logo').attr('src','images-event/logo1.png');
+    }
     });
     });
     </script>
