@@ -72,6 +72,13 @@
 	margin-right:10px;
 }
 
+.countdown-s1 .countdown-show3 .countdown-section {
+	width: 80px;
+	float:left;
+	padding:20px 0 10px 0;
+	margin-right:10px;
+}
+
 .countdown-s1.no-bg .countdown-section{
 	background:none;
 }
@@ -97,6 +104,14 @@
 }
 
 .countdown-s2 .countdown-show4 .countdown-section {
+	width: 80px;
+	float:left;
+	padding:20px 0 10px 0;
+	margin-right:10px;
+	background: rgba(255,255,255,.1);
+}
+
+.countdown-s2 .countdown-show3 .countdown-section {
 	width: 80px;
 	float:left;
 	padding:20px 0 10px 0;
