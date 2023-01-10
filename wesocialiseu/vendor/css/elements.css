@@ -2520,7 +2520,7 @@ header.mega-elements  .fixed-menu.navbar-top-default .header-social a:hover {
     font-size: 40px;
     font-weight: 600;
     margin: 15px 0 25px;
-    color: #404854;
+    color: #ecf0f1;
     line-height: 1.2;
     font-family: 'Montserrat', sans-serif;
 }
@@ -16216,7 +16216,7 @@ section.ui-block-25 {
 .ui-block-01.blog .heading-area .title{
     font-size: 40px;
     font-weight: 600;
-    color: #404854;
+    color: #ecf0f1;
     margin: 15px 0 25px;
 }
 
@@ -16254,7 +16254,7 @@ section.ui-block-25 {
 .ui-block-01.blog .news-item .news-title{
     margin: 10px 0;
     font-weight: 400;
-    color: #404854;
+    color: #ecf0f1;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -16284,7 +16284,7 @@ section.ui-block-25 {
 .ui-block-01.blog .author .author-name{
     font-size: 15px;
     margin: 0;
-    color: #404854;
+    color: #ecf0f1;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -19007,7 +19007,7 @@ section.ui-block-25 {
 .ui-block-01.team-sec h1, .ui-block-01.team-sec h2, .ui-block-01.team-sec h3, .ui-block-01.team-sec h4, .ui-block-01.team-sec h5, .ui-block-01.team-sec h6 {
     line-height: 1.2;
     font-weight: 500;
-    color: #404854;
+    color: #ecf0f1;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -25326,7 +25326,7 @@ section.ui-block-25 {
 .ui-block-21.reviews .alt-font{font-family: 'Montserrat', sans-serif;}
 
 .ui-block-21.reviews  {font-family: 'Roboto', sans-serif; font-size: 16px;color: #696969;font-weight:300;line-height:30px;letter-spacing: 0.2px;width: 100%; overflow-x: hidden}
-.ui-block-21.reviews h1, .ui-block-21.reviews h2, .ui-block-21.reviews h3, .ui-block-21.reviews h4, .ui-block-21.reviews h5, .ui-block-21.reviews h6 {line-height: 1.2; font-weight: 500; font-family: 'Montserrat', sans-serif; color: #404854;}
+.ui-block-21.reviews h1, .ui-block-21.reviews h2, .ui-block-21.reviews h3, .ui-block-21.reviews h4, .ui-block-21.reviews h5, .ui-block-21.reviews h6 {line-height: 1.2; font-weight: 500; font-family: 'Montserrat', sans-serif; color: #ecf0f1;}
 section,.section-padding {position: relative;padding: 7.5rem 0;overflow: hidden;}
 
 .ui-block-21.reviews.gradient-bg1{
