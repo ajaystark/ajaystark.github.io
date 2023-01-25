@@ -45,6 +45,41 @@
 	<!-- custom font -->
 	<link rel="stylesheet" href="css/font-style.css" type="text/css">
 </head>
+<style>
+    .text-black{
+        color: black !important;
+    }
+    .center {
+  background: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: 3px dashed #3679E2;
+}
+
+/* .center-2 {
+  background: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+} */
+.center-2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 200px;
+    border-radius: 150px 150px 0 0;
+    align-items: center;
+}
+</style>
 
 <body id="homepage" class="de_light">
 
@@ -170,6 +205,72 @@
                     <img src="images-event/1st-Month.gif" height="" alt="">
                 </div>
             </section> -->
+
+            
+			<section id="section-fun-facts" class="text-light">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <!-- <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay=".5s">
+                            <div class="de_count" >
+                                <i class="icon_id-2 id-color-2"></i>
+                                <h3 class=" text-black">76200</h3>
+                                <span class="text-black">Students</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay=".5s">
+                            <div class="de_count text-black">
+                                <i class="icon_easel id-color-2"></i>
+                                <h3 class=" text-black">22</h3>
+                                <span class=" text-black">Colleges</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay=".5s">
+                            <div class="de_count text-black">
+                                <i class="icon_headphones id-color-2"></i>
+                                <h3 class=" text-black">50</h3>
+                                <span class=" text-black">Tier 2 And Tier 3 Cities</span>
+                            </div>
+                        </div> -->
+                        <div class="col-md-auto col-xs-6 wow fadeIn" data-wow-delay=".5s">
+                            <div class="center d-flex flex-column justify-content-center">
+                                <div class="center-2" style="background-color: var(--primary-color-1) !important;">
+                                    <div class="my-4">
+                                        <i style="font-size: 50px; color: white;" class="icon_profile id-color-2"></i>
+                                    </div>
+                                </div>
+                                <br>
+                                <h3 class="w-100 text-center text-black mt-5">76200 Students</h3>
+                              </div>
+                        </div>
+                        
+                        <div class="col-md-auto col-xs-6 wow fadeIn" data-wow-delay=".5s">
+                            <div class="center d-flex flex-column justify-content-center">
+                                <div class="center-2" style="background-color: var(--primary-color-1) !important;">
+                                    <div class="my-4">
+                                        <i style="font-size: 50px; color: white;" class="icon_building id-color-2"></i>
+                                    </div>
+                                </div>
+                                <br>
+                                <h3 class="w-100 text-center text-black mt-5">22 Colleges</h3>
+                              </div>
+                        </div>
+                        
+                        <div class="col-md-auto col-xs-6 wow fadeIn" data-wow-delay=".5s">
+                            <div class="center d-flex flex-column justify-content-center">
+                                <div class="center-2" style="background-color: var(--primary-color-1) !important;">
+                                    <div class="my-4">
+                                        <i style="font-size: 50px; color: white;" class="icon_globe id-color-2"></i>
+                                    </div>
+                                </div>
+                                <br>
+                                <h3 class="w-100 text-center text-black mt-5">Tier 2 And <br> Tier 3 Cities</h3>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 			
 			<section id="section-about" data-bgimage="url(images-event/bg/1.png) fixed no-repeat">
@@ -540,6 +641,10 @@
                                 <ul class="de_nav de_nav_dark">
                                     
                                     <li  class="active" data-link="#section-services-tab">
+                                        <h3>February <span></span></h3>
+                                        <h4></h4>
+                                    </li>
+                                    <li data-link="#section-services-tab">
                                         <h3>December <span></span></h3>
                                         <h4></h4>
                                     </li>
@@ -559,6 +664,23 @@
 
                                 <div class="de_tab_content text-left">
 
+                                    <div id="tab5" class="tab_single_content dark">
+                                       
+                                        <div class="row">
+                                            <div class="col-md-6 col-12">
+                                                <div class=" d-flex flex-column justify-content-center h-100">
+
+                                                    <h1 class="w-100 text-center">Coming Soon</h1>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="text-center">
+                                                    <img src="images-event/all.gif" width="100%" alt="">
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
                                     
                                     <div id="tab4" class="tab_single_content dark">
                                        
@@ -1158,43 +1280,6 @@
             </section>
             <!-- logo carousel section close -->
 			
-			<section id="section-fun-facts" class="text-light d-none" data-bgimage="url(images-event/bg/3.jpg) fixed top">
-                    <div class="container">
-						<div class="row">
-                            <div class="col-md-3 col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                                <div class="de_count" >
-                                    <i class="icon_id-2 id-color-2"></i>
-                                    <h3>8800</h3>
-                                    <span class="text-white">Participants</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                                <div class="de_count">
-                                    <i class="icon_easel id-color-2"></i>
-                                    <h3>300</h3>
-                                    <span class="text-white">Topics</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                                <div class="de_count">
-                                    <i class="icon_headphones id-color-2"></i>
-                                    <h3>50</h3>
-                                    <span class="text-white">Speakers</span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                                <div class="de_count">
-                                    <i class="icon_globe id-color-2"></i>
-                                    <h3>20</h3>
-                                    <span class="text-white">Awards</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
 
             <!-- footer begin -->

@@ -23,6 +23,9 @@ jQuery(document).ready(function() {
                 $('#defaultCountdown').countdown({until:map_json[7]});
                 $('#main-title').html("Delhi Technological  <br> University <br> <span class='id-color' style='color:var(--secondary-color) !important'>New Delhi</span>");
             }
+            $('#defaultCountdown').countdown({until:map_json[7]});
+            $('#main-title').html("Coming <br> <span class='id-color' style='color:var(--secondary-color) !important'>Soon</span>");
+        
         });
 });		
 
