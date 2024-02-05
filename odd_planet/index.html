@@ -322,7 +322,7 @@
             <div class="col-md-6 col-12">
                 <div class="d-flex justify-content-end">
 
-                    <img src="ad-agency/img/mission_new.png" alt="">
+                    <img class="mission-img" src="ad-agency/img/mission_new.png" alt="">
                 </div>
             </div>
             
@@ -340,7 +340,7 @@
             
             <div class="col-md-6 col-12">
                 <div>
-                    <img src="ad-agency/img/vission_new.png" alt="">
+                    <img class="mission-img" src="ad-agency/img/vission_new.png" alt="">
                 
                 </div>
             </div>
@@ -938,7 +938,31 @@
         </div>
     </div>
 </section>
-<!-- Work ends -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
 
 <section id="section-sponsors" >
     <div class="px-lg-5">
@@ -950,24 +974,85 @@
             </div>
             <!-- <div class="spacer-double"></div> -->
             <!-- <div class="col-md-12 text-center wow fadeInUp" style="background: rgba(255,255,255,0.1); border-radius: 25px;"> -->
-            <div class="col-md-12 text-center wow fadeInUp">
+            
+            <section class="customer-logos slider p-0 d-md-none d-block">
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i1.webp
+"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i2.png
+"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i3.png
+"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i4.png
+"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i5.png
+"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i6.png
+"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i7.png
+"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i8.png
+"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i9.png
+"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i10.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i11.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i12.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i13.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i14.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i15.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i16.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i17.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i18.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i19.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i20.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i21.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i22.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i23.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i24.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i25.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i26.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i27.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i28.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i29.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i30.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i31.png"></div>
+                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i32.png"></div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-md-12 text-center wow fadeInUp d-md-block d-none">
                 <!-- <h3>Gold Sponsors</h3> -->
                 <div class="spacer-single"></div>
                 <img src="ad-agency/img/brands/amazon.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/amd.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/binomo.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/boat.png" alt="" class="grey-hover">
-                
-
-                <!-- <h3>Silver Sponsors</h3> -->
-                <!-- <div class="spacer-single"></div> -->
                 <img src="ad-agency/img/brands/booyah.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/cellbell.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/14884_952f4880f805a.webp" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/converse.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/ea.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/embassy.png" alt="" class="grey-hover">
-                <!-- <img src="ad-agency/img/brands/fanclash.png" alt="" class="grey-hover"> -->
                 <img src="ad-agency/img/brands/garena.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/green soul.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/hyundai.png" alt="" class="grey-hover">
@@ -984,13 +1069,14 @@
                 <img src="ad-agency/img/brands/oneplus.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/realme.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/redbull.png" alt="" class="grey-hover">
-                <!-- <img src="ad-agency/img/brands/rooter.png" alt="" class="grey-hover"> -->
                 <img src="ad-agency/img/brands/samsung.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/turnip.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/winzo.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/wow skin.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/x.png" alt="" class="grey-hover">
                 <img src="ad-agency/img/brands/zone.png" alt="" class="grey-hover">
+                <!-- <img src="ad-agency/img/brands/fanclash.png" alt="" class="grey-hover"> -->
+                <!-- <img src="ad-agency/img/brands/rooter.png" alt="" class="grey-hover"> -->
             </div>
         </div>
     </div>
@@ -1121,38 +1207,6 @@
                                 <p>What Client Say About Us?</p>
                             </div>
                             <div class="testimonial-content owl-carousel">
-                                <!-- Single Testimonial -->
-                                <div class="single-testimonial">
-                                    <div class="round-1 round"></div>
-                                    <div class="round-2 round"></div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                    <div class="client-info">
-                                        <div class="client-video">
-                                            <a href="#"><img src="https://i.ibb.co/DWhSr6S/play-button2.png" alt=""></a>
-                                        </div>
-                                        <div class="client-details">
-                                            <h6>Yeasin Arafat</h6>
-                                            <span>Designer, LLCG Team</span>
-                                        </div>
-                                    </div>
-                    
-                                </div>
-                                <!-- Single Testimonial -->
-                                <div class="single-testimonial">
-                                    <div class="round-1 round"></div>
-                                    <div class="round-2 round"></div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                    <div class="client-info">
-                                        <div class="client-video">
-                                            <a href="#"><img src="https://i.ibb.co/DWhSr6S/play-button2.png" alt=""></a>
-                                        </div>
-                                        <div class="client-details">
-                                            <h6>Yeasin Arafat</h6>
-                                            <span>Designer, LLCG Team</span>
-                                        </div>
-                                    </div>
-                    
-                                </div>
                                 <!-- Single Testimonial -->
                                 <div class="single-testimonial">
                                     <div class="round-1 round"></div>
@@ -1432,7 +1486,24 @@
 	mouseDrag: true,
 	autoplay: false,
 	autoplayTimeout: 4000,
-	smartSpeed: 800
+	smartSpeed: 800,
+    responsive:{
+        0: {
+      items: 1
+    },
+
+    900: {
+      items: 2
+    },
+
+    1024: {
+      items: 2
+    },
+
+    1366: {
+      items: 2
+    }
+    }
 });
 
 </script>
