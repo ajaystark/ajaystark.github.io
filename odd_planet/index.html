@@ -31,23 +31,12 @@
     <link rel="stylesheet" href="ad-agency/css/style.css">
     <!-- Custom Style CSS File -->
     <link rel="stylesheet" href="ad-agency/css/custom.css">
-</head>
-<style>
-    html {
-  scroll-behavior: smooth;
-}
-.logo-translate{
-    transform: translate(0px, -50px);
-    transform: scale(1.2);
-}
 
-@media screen and (max-width: 767px) {
-    .logo-translate{
-    transform: translate(0px, 0px);
-    transform: scale(1.5);
-}
-}
-</style>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
 
 <body data-spy="scroll" data-target=".navbar-nav" data-offset="90">
 
@@ -287,7 +276,7 @@
 <!-- Main Section end -->
 
 <!--About start-->
-<section class="about overflow-visible bg-dark1" id="about">
+<section class="about overflow-visible bg-dark1 d-none" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 pr-5 mb-5 mb-lg-0 wow fadeInLeft">
@@ -322,83 +311,318 @@
         </div>
     </div>
 </section>
-<!--About end-->
 
+<section class="p-0">
+    <div  class="bg-earth py-3" id="about">
+        
+        <div class="sec-title centered">
+            <h2 style="color: white;"> About Us</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="d-flex justify-content-end">
+
+                    <img src="ad-agency/img/mission_new.png" alt="">
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-12 d-flex justify-content-center flex-column">
+                <h3 class="p-3 mission-text">Empower individuals and orgranisations to reach their full potential</h3>
+            </div>
+            
+            <div class=" col-md-6 col-12 d-flex justify-content-center flex-column">
+            <div class="d-flex justify-content-end">
+                <h3 class="p-3 vission-text">Provide innovative solutions for personal and professional growth</h3>
+            
+            </div>
+            
+            </div>
+            
+            <div class="col-md-6 col-12">
+                <div>
+                    <img src="ad-agency/img/vission_new.png" alt="">
+                
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- About Boxes start -->
 <section class="bg-dark2" id="services">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="main-title wow fadeIn" data-wow-delay="300ms">
+                <!-- <div class="main-title wow fadeIn" data-wow-delay="300ms">
                     <h2>We’re <span class="color-blue">Creative</span> Branding<br>and Corporate Identity <span class="color-blue">Agency</span></h2>
-                </div>
+                </div> -->
+                
+            <div class="sec-title centered">
+                <h2 style="color: white;">Our Services</h2>
+            </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 mt-3">
-                <div class="about-box mb-lg-0 mx-auto bg-blue">
-                    <span class="pro-step d-inline-block color-white"><i class="fa fa-cog"></i></span>
-                    <h5 class="font-weight-500 color-white mt-25px mb-15px">White Label Projects</h5>
+        <div class="row justify-content-around">
+                  <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
+                    <span class="pro-step d-inline-block color-white"><i class="fa-solid fa-podcast"></i></span>
+                    <br>
+                    <h3>White Label Projects</h3>
+                    
                     <p class="font-weight-light color-white">For Publishers and 
                         Brands</p>
                     <p class="font-weight-light color-white">Podcasts and Talk 
                         Shows</p>
                     <p class="font-weight-light color-white">Events and IP's</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-12   mt-3">
-                <div class="about-box mb-0 mx-auto bg-blue">
-                    <span class="pro-step d-inline-block color-white"><i class="fa fa-code"></i></span>
-                    <h5 class="font-weight-500 color-white mt-25px mb-15px text-capitalize">Production</h5>
+                    
+                  </div>
+                  
+                  <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
+                    <span class="pro-step d-inline-block color-white"><i class="fa-solid fa-video"></i></span>
+                    <br>
+                    <h3>Production</h3>
                     <p class="font-weight-light color-white">Short Movies & Web Series</p>
                     <p class="font-weight-light color-white">Esports Productions</p>
                     <p class="font-weight-light color-white">Photo Shoots</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-12  mt-3">
-                <div class="about-box mb-0 mx-auto bg-blue">
-                    <span class="pro-step d-inline-block color-white"><i class="fa fa-google"></i></span>
-                    <h5 class="font-weight-500 color-white mt-25px mb-15px text-capitalize">Game Development</h5>
+                    
+                  </div>
+                  
+                  <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
+                    <span class="pro-step d-inline-block color-white"><i class="fa-solid fa-gamepad"></i></span>
+                    <br>
+                    <h3>Game Development</h3>
+                
                     <p class="font-weight-light color-white">Training Games</p>
                     <p class="font-weight-light color-white"> AAA Games</p>
                     <p class="font-weight-light color-white">Multiplayer Games</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-12 mt-3">
-                <div class="about-box mb-0 mx-auto bg-blue">
-                    <span class="pro-step d-inline-block color-white"><i class="fa fa-music"></i></span>
-                    <h5 class="font-weight-500 color-white mt-25px mb-15px text-capitalize">Music</h5>
-                    <p class="font-weight-light color-white">Hip Hop & Pop</p>
-                    <p class="font-weight-light color-white">Metal Music</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-12 mt-3">
-                <div class="about-box mb-0 mx-auto bg-blue">
-                    <span class="pro-step d-inline-block color-white"><i class="fa fa-code"></i></span>
-                    <h5 class="font-weight-500 color-white mt-25px mb-15px text-capitalize">Talent Management</h5>
-                    <p class="font-weight-light color-white">Campaign Design</p>
-                    <!-- <p class="font-weight-light color-white"> End to End Campaign 
-                        Execution</p> -->
-                    <p class="font-weight-light color-white">Creator Development</p>
-                </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 col-12 mt-3">
-                <div class="about-box mb-5 mb-lg-0 mx-auto bg-blue">
-                    <span class="pro-step d-inline-block color-white"><i class="fa fa-phone-volume"></i></span>
-                    <h5 class="font-weight-500 color-white mt-25px mb-15px text-capitalize">Media & Marketing</h5>
-                    <p class="font-weight-light color-white"> ROI Based Campaign</p>
-                    <p class="font-weight-light color-white"> Meme Marketing</p>
                     
-                </div>
-            </div>
+                  </div>
+
+        </div>
+        <div class="row mt-md-3 mt-0 justify-content-around">
+            
+            <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
+                <span class="pro-step d-inline-block color-white"><i class="fa fa-music"></i></span>
+                <br>
+                <h3>Music</h3>
+                
+                <p class="font-weight-light color-white">Hip Hop & Pop</p>
+                <p class="font-weight-light color-white">Metal Music</p>
+              </div>
+              
+              <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
+                <span class="pro-step d-inline-block color-white"><i class="fa-solid fa-users-rectangle"></i></span>
+                <br>
+                <h3>Talent Management</h3>
+                
+                <p class="font-weight-light color-white">Campaign Design</p>
+                <p class="font-weight-light color-white"> End to End Campaign 
+                    Execution</p>
+                <p class="font-weight-light color-white">Creator Development</p>
+              </div>
+              
+              <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
+                <span class="pro-step d-inline-block color-white"><i class="fa-solid fa-photo-film"></i></span>
+                <br>
+                <h3>Media & Marketing</h3>
+                
+                <p class="font-weight-light color-white"> ROI Based Campaign</p>
+                <p class="font-weight-light color-white"> Meme Marketing</p>
+                
+              </div>
+
+        </div>
+       
         </div>
     </div>
 </section>
 <!-- About Boxes ends -->
 
+<section  id="team" class="bg-light-gray bg-dark1">
+    <section class="team-page-section">
+        <div class="px-md-5 mx-md-5 px-3">
+            <!-- Sec Title -->
+            <div class="sec-title centered">
+                <h2 style="color: white;">Our Team</h2>
+            </div>
+
+            <div class="row clearfix">
+
+                <!-- Team Block -->
+                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <div class="image">
+                            <a href="#"><img src="ad-agency/img/team/oja.jpg" alt="" /></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="#">Tushar Goyal </a></h3>
+                            <div class="designation">Founder & Chief Executive Officer</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Block -->
+                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <div class="image">
+                            <a href="#"><img src="ad-agency/img/team/purvi.jpg" alt="" /></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="#">Purvi Jain </a></h3>
+                            <div class="designation">Executive Director - Client Partnerships </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <div class="image">
+                            <a href="#"><img src="ad-agency/img/team/arjun.jpg" alt="" /></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="#">Arjun Singh </a></h3>
+                            <div class="designation">Chief Operations Strategist </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <div class="image">
+                            <a href="#"><img src="ad-agency/img/team/ashutosh.jpeg" alt="" /></a>
+                        </div>
+                        <div class="lower-content">
+                            <h3><a href="#">Ashutosh Jha </a></h3>
+                            <div class="designation">Talent Acquisition and Partnership Manager </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="team" class="bg-light-gray bg-dark1 d-none">
+    <div class="">
+        <div class="swiper people__slide">
+        <div class="swiper-wrapper slider justify-content-around">
+          <div class="swiper-slide">
+            <div class="people__card">
+              <div class="people__image">
+                <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="大西 真裕">
+              </div>
+              <div class="people__info">
+                <ul class="people__social">
+                  <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+                <h3 class="people__name">Drew Houston</h3>
+                <p class="people__position">Co-founder and CEO</p>
+                <p class="people__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              </div>
+              <div class="people__btn">
+                <a href="">View info</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="people__card">
+              <div class="people__image">
+                <img src="https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+              </div>
+              <div class="people__info">
+                <ul class="people__social">
+                  <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+                <h3 class="people__name">Melanis Collins</h3>
+                <p class="people__position">VP off People</p>
+                <p class="people__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              </div>
+              <div class="people__btn">
+                <a href="">View info</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="people__card">
+              <div class="people__image">
+                <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="篠田 直哉">
+              </div>
+              <div class="people__info">
+                <ul class="people__social">
+                  <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+                <h3 class="people__name">Bharat Mediratta</h3>
+                <p class="people__position">CTO and SVP, Platform</p>
+                <p class="people__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              </div>
+              <div class="people__btn">
+                <a href="">View info</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="people__card">
+              <div class="people__image">
+                <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="篠田 直哉">
+              </div>
+              <div class="people__info">
+                <ul class="people__social">
+                  <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+                <h3 class="people__name">Bharat Mediratta</h3>
+                <p class="people__position">CTO and SVP, Platform</p>
+                <p class="people__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              </div>
+              <div class="people__btn">
+                <a href="">View info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+</section>
+
 <!-- Team start -->
-<section id="team" class="bg-light-gray bg-dark1">
+<section id="team" class="bg-light-gray bg-dark1 d-none">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -512,10 +736,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="main-title wow fadeIn" data-wow-delay="300ms">
                     <!-- <h5> Lorem ipsum dolor sit amet </h5> -->
-                    <h2 class="mb-0" style="font-size: 75px; font-weight: 500;">Our<span class="color-blue"> Partners</span> </h2>
-                </div>
+                    <!-- <h2 class="mb-0" style="font-size: 75px; font-weight: 500;">Our<span class="color-blue"> Partners</span> </h2> -->
+                    
+            <div class="sec-title wow fadeIn centered"  data-wow-delay="300ms">
+                <h2 style="color: white;">Our partners</h2>
+            </div>
             </div>
         </div>
         <div class="row d-block">
@@ -714,50 +940,15 @@
 </section>
 <!-- Work ends -->
 
-<style>
-    .spacer-single{
-	width:100%;
-	height:30px;
-	display:block;
-	clear:both;
-	}
-	
-	.spacer-double{
-	width:100%;
-	height:60px;
-	display:block;
-	clear:both;
-	}
-    .grey-hover{
-        vertical-align: middle;
-        max-height: 200px;
-        margin: 20px;
-        background: white;
-        border-radius: 25px;
-        padding: 10px;
-    }
-    .grey-hover:hover {
-        /* filter: none;
-        -webkit-filter: none; */
-        transform: scale(1.1);
-    }
-    
-    @media screen and (max-width: 900px) {
-        
-        .grey-hover{
-            margin: 0px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-right: 10px;
-        }
-    }
-</style>
-
 <section id="section-sponsors" >
     <div class="px-lg-5">
         <div class="row">
-            <h2 class="text-white text-center w-100" data-wow-delay="300ms">Our <span class="color-blue"> Clients</span></h2>
-            <div class="spacer-double"></div>
+            <!-- <h2 class="text-white text-center w-100" data-wow-delay="300ms">Our <span class="color-blue"> Clients</span></h2> -->
+            
+            <div class="sec-title wow fadeIn centered w-100"  data-wow-delay="300ms">
+                <h2 style="color: white;">Our Clients</h2>
+            </div>
+            <!-- <div class="spacer-double"></div> -->
             <!-- <div class="col-md-12 text-center wow fadeInUp" style="background: rgba(255,255,255,0.1); border-radius: 25px;"> -->
             <div class="col-md-12 text-center wow fadeInUp">
                 <!-- <h3>Gold Sponsors</h3> -->
@@ -899,14 +1090,13 @@
     <h2 class="d-none">heading</h2>
     <div class="section-padding parallax-setting parallaxie parallax2">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-12">
                     <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                        <!-- <h5> Lorem ipsum dolor sit amet </h5> -->
                         <h2 class="mb-0">Client<span class="color-blue"> Testimonials</span></h2>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div class="testimonial-images">
                 <div class="owl-thumbs owl-dots d-lg-block d-none">
@@ -924,7 +1114,97 @@
 
             <div class="row align-items-center position-relative">
                 <div class="col-md-12">
-                    <div class="owl-carousel owl-theme testimonial-two hide-cursor mx-auto wow zoomIn" data-wow-delay="400ms">
+                    <div class="testimonial-area">
+                        <div class="container">
+                            <div class="sec-title white-title">
+                                <h2>Testimonials</h2>
+                                <p>What Client Say About Us?</p>
+                            </div>
+                            <div class="testimonial-content owl-carousel">
+                                <!-- Single Testimonial -->
+                                <div class="single-testimonial">
+                                    <div class="round-1 round"></div>
+                                    <div class="round-2 round"></div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                    <div class="client-info">
+                                        <div class="client-video">
+                                            <a href="#"><img src="https://i.ibb.co/DWhSr6S/play-button2.png" alt=""></a>
+                                        </div>
+                                        <div class="client-details">
+                                            <h6>Yeasin Arafat</h6>
+                                            <span>Designer, LLCG Team</span>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                                <!-- Single Testimonial -->
+                                <div class="single-testimonial">
+                                    <div class="round-1 round"></div>
+                                    <div class="round-2 round"></div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                    <div class="client-info">
+                                        <div class="client-video">
+                                            <a href="#"><img src="https://i.ibb.co/DWhSr6S/play-button2.png" alt=""></a>
+                                        </div>
+                                        <div class="client-details">
+                                            <h6>Yeasin Arafat</h6>
+                                            <span>Designer, LLCG Team</span>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                                <!-- Single Testimonial -->
+                                <div class="single-testimonial">
+                                    <div class="round-1 round"></div>
+                                    <div class="round-2 round"></div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                    <div class="client-info">
+                                        <div class="client-video">
+                                            <a href="#"><img src="https://i.ibb.co/DWhSr6S/play-button2.png" alt=""></a>
+                                        </div>
+                                        <div class="client-details">
+                                            <h6>Yeasin Arafat</h6>
+                                            <span>Designer, LLCG Team</span>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                                <!-- Single Testimonial -->
+                                <div class="single-testimonial">
+                                    <div class="round-1 round"></div>
+                                    <div class="round-2 round"></div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                    <div class="client-info">
+                                        <div class="client-video">
+                                            <a href="#"><img src="https://i.ibb.co/DWhSr6S/play-button2.png" alt=""></a>
+                                        </div>
+                                        <div class="client-details">
+                                            <h6>Yeasin Arafat</h6>
+                                            <span>Designer, LLCG Team</span>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                                <!-- Single Testimonial -->
+                                <div class="single-testimonial">
+                                    <div class="round-1 round"></div>
+                                    <div class="round-2 round"></div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                    <div class="client-info">
+                                        <div class="client-video">
+                                            <a href="#"><img src="https://i.ibb.co/DWhSr6S/play-button2.png" alt=""></a>
+                                        </div>
+                                        <div class="client-details">
+                                            <h6>Yeasin Arafat</h6>
+                                            <span>Designer, LLCG Team</span>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-carousel owl-theme testimonial-two hide-cursor mx-auto wow zoomIn d-none" data-wow-delay="400ms">
                         <div class="testimonial-item">
                             <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
                             <div class="testimonial-post">
@@ -942,7 +1222,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="testimonial-item hide-cursor">
+                        <div class="testimonial-item hide-cursor d-none">
                             <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
 
                             <div class="testimonial-post">
@@ -960,7 +1240,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="testimonial-item">
+                        <div class="testimonial-item  d-none">
                             <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
 
                             <div class="testimonial-post">
@@ -978,7 +1258,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="testimonial-item">
+                        <div class="testimonial-item  d-none">
                             <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
 
                             <div class="testimonial-post">
@@ -986,79 +1266,6 @@
                                 <div class="text-content">
                                     <h5 class="color-white text-capitalize">Chris Gorgano</h5>
                                     <p class="color-white"> Photographer </p>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonial-item">
-                            <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
-
-                            <div class="testimonial-post">
-                                <!-- <a href="javascript:void(0)" class="post"><img src="ad-agency/img/testimonial5.png" alt="image"></a> -->
-                                <div class="text-content">
-                                    <h5 class="color-white text-capitalize">Kate Carter</h5>
-                                    <p class="color-white"> Model </p>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
-
-                            <div class="testimonial-post">
-                                <!-- <a href="javascript:void(0)" class="post"><img src="ad-agency/img/testimonial6.png" alt="image"></a> -->
-                                <div class="text-content">
-                                    <h5 class="color-white text-capitalize">Alex Curtis </h5>
-                                    <p class="color-white"> Manager </p>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
-
-                            <div class="testimonial-post">
-                                <!-- <a href="javascript:void(0)" class="post"><img src="ad-agency/img/testimonial7.jpg" alt="image"></a> -->
-                                <div class="text-content">
-                                    <h5 class="color-white text-capitalize">Ashley Wilson</h5>
-                                    <p class="color-white"> Actor </p>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
-
-                            <div class="testimonial-post">
-                                <!-- <a href="javascript:void(0)" class="post"><img src="ad-agency/img/testimonial8.jpg" alt="image"></a> -->
-                                <div class="text-content">
-                                    <h5 class="color-white text-capitalize">Johnny Perkins</h5>
-                                    <p class="color-white"> Athlete </p>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -1108,7 +1315,7 @@
 <!-- Blog ends -->
 
 <!-- Contact & Map starts -->
-<section id="contact" class="bg-light-gray bg-dark1">
+<section id="contact" class="bg-light-gray bg-dark1 d-none">
     <div class="container">
         <div class="row mx-lg-0">
             <div class="col-12 e p-0">
@@ -1214,5 +1421,33 @@
 <!-- custom script -->
 <script src="ad-agency/js/script.js"></script>
 
+
+<script>
+    $(".testimonial-content").owlCarousel({
+	loop: true,
+	items: 2,
+	margin: 50,
+	dots: true,
+	nav: false,
+	mouseDrag: true,
+	autoplay: false,
+	autoplayTimeout: 4000,
+	smartSpeed: 800
+});
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  loop: true, 
+  slidesPerView: "auto",
+  centeredSlides: true,
+  observeParents: !0,
+  observer: !0
+});
+
+
+</script>
 </body>
 </html>
