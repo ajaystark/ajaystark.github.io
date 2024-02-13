@@ -3802,6 +3802,7 @@ color: #ff9600;
 
 .team-block{
 position:relative;
+display: flex !important;
 }
 
 .team-block .inner-box{
@@ -3876,6 +3877,9 @@ transition: all 0.4s;
 .team-block .inner-box:hover .social-icons li a,
 .team-block .inner-box:hover .lower-content .designation{
 color:#ffffff;
+}
+.designation{
+    color: #1DA1F2 !important;
 }
 
 .team-block .inner-box .image{
