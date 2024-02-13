@@ -3566,7 +3566,7 @@ ul.rounded li::before {
 }
 
 .mission-img{
-    max-width: 75% !important;
+    max-width: 60% !important;
 }
 
 .vission-text{
@@ -3590,6 +3590,7 @@ ul.rounded li::before {
     .vission-text{
         font-size: 20px !important;
         width: 100% !important;
+        text-align: center;
 
     }
 
@@ -4155,7 +4156,11 @@ background-image: linear-gradient(to bottom, #FFEB3C 0%, #ff9600 100%);
     }
     
     @media screen and (max-width: 900px) {
-        
+                
+        .sec-title h2{
+            font-size:36px !important;
+            }
+                
         .grey-hover{
             margin: 0px;
             margin-top: 10px;
@@ -4210,6 +4215,7 @@ background-image: linear-gradient(to bottom, #FFEB3C 0%, #ff9600 100%);
 	border-radius: 45px;
 	position: relative;
 	z-index: 2;
+    backdrop-filter: blur(10px);
 }
 .single-testimonial p {
 	color: #fff;
