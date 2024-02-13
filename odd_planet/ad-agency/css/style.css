@@ -3565,6 +3565,10 @@ ul.rounded li::before {
     width: 50%;
 }
 
+.mission-img{
+    max-width: 75% !important;
+}
+
 .vission-text{
     font-size: 30px;
     color: white;
