@@ -4354,7 +4354,7 @@ background-image: linear-gradient(to bottom, #FFEB3C 0%, #ff9600 100%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-align: left;
+	text-align: center;
 	padding-bottom: 50px;
 }
 .client-info h6 {
