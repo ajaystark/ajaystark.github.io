@@ -1,1357 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <!-- description -->
-   <meta name="description" content="Odd Planet | Where Odds Align">
-   <!-- keywords -->
-   <meta name="keywords" content="media , marketing , talent management, production , game development">
-    <!-- Page Title -->
+    <meta name="description" content="Odd Planet | Where Odds Align">
+    <meta name="keywords" content="media, marketing, talent management, production, game development">
     <title>Odd Planet</title>
-    <!-- Favicon -->
-    <link rel="icon" href="ad-agency/img/favicon.ico">
-    <!-- Bundle -->
-    <link rel="stylesheet" href="vendor/css/bundle.min.css">
-    <!-- Plugin Css -->
-    <link rel="stylesheet" href="vendor/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="ad-agency/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="ad-agency/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendor/css/swiper.min.css">
-
-    <link rel="stylesheet" href="vendor/css/cubeportfolio.min.css">
-    <!-- Revolution Slider CSS Files -->
-    <link rel="stylesheet" href="ad-agency/css/navigation.css">
-    <link rel="stylesheet" href="ad-agency/css/settings.css">
-    <!-- Slick CSS Files -->
-    <link rel="stylesheet" href="vendor/css/slick.css">
-    <link rel="stylesheet" href="vendor/css/slick-theme.css">
-    <!-- Style Sheet -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="ad-agency/css/style.css">
-    <!-- Custom Style CSS File -->
-    <link rel="stylesheet" href="ad-agency/css/custom.css">
-
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".navbar-nav" data-offset="90">
-
-<!-- Loader -->
-<div class="loader" id="loader-fade">
-        <div class="dot-container">
-            <div class="dot dot-1"></div>
-            <div class="dot dot-2"></div>
-            <div class="dot dot-3"></div>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="#home"><img src="ad-agency/img/logo-header.png" alt="Odd Planet Logo"></a>
         </div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <defs>
-                <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
-                </filter>
-            </defs>
-        </svg>
-</div>
-<!-- Loader ends -->
-
-<!-- Header start -->
-<section class="top-header cursor-light">
-    <div class="row no-gutters">
-        <div class="col-6 col-lg-6">
-            <div class="slider-icons">
-                <ul class="slider-social banner-social d-flex">
-                    <li class="animated-wrap"><a  href="https://www.facebook.com/profile.php?id=61555456150796" class="animated-element" href="javascript:void(0);"><i class="fab fa-facebook-f"></i> </a></li>
-                    <!-- <li class="animated-wrap"><a class="animated-element" href="javascript:void(0);"><i class="fab fa-twitter"></i>  </a></li> -->
-                    <li class="animated-wrap"><a class="animated-element" href="https://www.linkedin.com/company/odd-planet"><i class="fab fa-linkedin-in"></i> </a></li>
-                    <li class="animated-wrap"><a class="animated-element" href="https://www.instagram.com/oddplanet.in/"><i class="fab fa-instagram"></i> </a></li>
-
-                </ul>
-            </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#work">Work</a>
+            <a href="#clients">Clients</a>
+        </nav>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
         </div>
-        <div class="col-6 col-lg-6 d-flex align-items-center justify-content-end justify-content-lg-end">
-            <a class="menu_bars menu-bars-setting sidemenu_toggle link mr-3 mr-lg-3">
-                <div class="menu-lines">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </a>
-        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="close-menu"><i class="fas fa-times"></i></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#work">Work</a>
+            <a href="#clients">Clients</a>
+        </nav>
     </div>
-</section>
-<header class="cursor-light">
-    <nav class="navbar navbar-top-default navbar-expand-lg nav-three-circles bottom-nav nav-box-shadow no-animation">
-        <div class="container-fluid">
-            <!-- <a class="logo ml-lg-1" href="javascript:void(0)">
-                <img src="ad-agency/img/logo-header.png" class="logo-default" alt="logo" title="Logo">
-            </a> -->
-            <div class="collapse navbar-collapse d-none d-lg-block">
-                <ul class="nav navbar-nav mx-auto">
-                    <li class="nav-item"> <a href="#home" class="scroll nav-link link">home</a></li>
-                    <li class="nav-item"> <a href="#about" class="scroll nav-link link">about</a></li>
-                    <li class="nav-item"> <a href="#services" class="scroll nav-link link">services</a></li>
-                    <li class="nav-item"> <a href="#team" class="scroll nav-link link">team</a></li>
-                    <li class="nav-item"> <a href="#work" class="scroll nav-link link">work</a></li>
-                    <li class="nav-item"> <a href="#clients" class="scroll nav-link link">clients</a></li>
-                    <!-- <li class="nav-item"> <a href="#blog" class="scroll nav-link link">blog</a></li> -->
-                    <!-- <li class="nav-item"> <a href="#contact" class="scroll nav-link link">contact</a></li> -->
-                </ul>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="canvas-container"></div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="ad-agency/img/logo_main.png" alt="Odd Planet">
             </div>
-            <!-- <a href="javascript:void(0)" class="nav-btn-number btn-setting btn-hvr-up btn-hvr-whatsapp color-white mr-lg-3"><i class="fab fa-whatsapp"></i> +91 9711901948</a> -->
-            <!-- side menu open button -->
-            <div class="menu-btn">
-            <a class="menu_bars menu-bars-setting animated-wrap sidemenu_toggle">
-                <div class="menu-lines animated-element">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </a>
-            </div>
-            <!-- Side Menu -->
-        </div>
-    </nav>
-    <!-- side menu open button -->
-<!--    <a class="menu_bars menu-bars-setting animated-wrap sidemenu_toggle d-lg-inline-block d-none">-->
-<!--        <div class="menu-lines animated-element">-->
-<!--            <span></span>-->
-<!--            <span></span>-->
-<!--            <span></span>-->
-<!--        </div>-->
-<!--    </a>-->
-    <!-- Side Menu -->
-    <div class="side-menu center">
-        <div class="quarter-circle">
-            <div class="menu_bars2 active" id="btn_sideNavClose">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div class="inner-wrapper justify-content-center">
-            <div class="col-md-12 text-center">
-                <a href="javascript:void(0)" class="logo-full mb-4"><img src="ad-agency/img/logo-header.png" alt=""></a>
-            </div>
-            <nav class="side-nav m-0">
-                <ul class="navbar-nav flex-lg-row">
-                    <li class="nav-item"> <a href="#home" class="scroll nav-link link">home</a></li>
-                    <li class="nav-item"> <a href="#about" class="scroll nav-link link">about</a></li>
-                    <li class="nav-item"> <a href="#services" class="scroll nav-link link">services</a></li>
-                    <li class="nav-item"> <a href="#team" class="scroll nav-link link">team</a></li>
-                    <li class="nav-item"> <a href="#work" class="scroll nav-link link">work</a></li>
-                    <li class="nav-item"> <a href="#clients" class="scroll nav-link link">clients</a></li>
-                    <!-- <li class="nav-item"> <a href="#blog" class="scroll nav-link link">blog</a></li> -->
-                    <!-- <li class="nav-item"> <a href="#contact" class="scroll nav-link link">contact</a></li> -->
-                </ul>
-            </nav>
-
-            <div class="side-footer text-white w-100">
-                <ul class="social-icons-simple">
-                    <li class="side-menu-icons"><a  href="https://www.facebook.com/profile.php?id=61555456150796"><i class="fab fa-facebook-f color-white"></i> </a> </li>
-                    <li class="side-menu-icons"><a href="https://www.instagram.com/oddplanet.in/"><i class="fab fa-instagram color-white"></i> </a> </li>
-                    <li class="side-menu-icons"><a href="https://www.linkedin.com/company/odd-planet"><i class="fab fa-twitter color-white"></i> </a> </li>
-                    
-                </ul>
-                <!-- <p class="text-white">Made With &#9825; by <a href="https://ajaystark.github.io/" class="text-white">Ajay</a>  </p> -->
-            </div>
-        </div>
-    </div>
-    <a id="close_side_menu" href="javascript:void(0);"></a>
-    <!--Side Menu-->
-</header>
-<!-- Header end -->
-
-<!-- Main Section start -->
-<section id="home" class="p-0 h-100vh cursor-light">
-    <h2 class="d-none">heading</h2>
-    <!--Main Slider-->
-    <div id="rev_slider_8_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="weone" data-source="gallery" style="background:transparent;padding:0px;">
-        <!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
-        <div id="rev_slider_8_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8.1">
-            <ul><!-- SLIDE  -->
-                <!-- SLIDE 1 -->
-                <li data-index="rs-36" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- LAYERS -->
-                    <!-- <img src="ad-agency/img/slider-img.jpg"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" alt="slider-image" data-no-retina> -->
-                    <div class="banner-overlay"></div>
-                    <!-- LAYERS -->
-                    <div class="rs-background-video-layer"
-                         data-forcerewind="on"
-                         data-volume="mute"
-                         data-videowidth="100%"
-                         data-videoheight="100vh"
-                         data-videomp4="ad-agency/video/0119 (6).mp4"
-                         data-videopreload="auto"
-                         data-videoloop="loopandnoslidestop"
-                         data-forceCover="1"
-                         data-aspectratio="16:9"
-                         data-autoplay="true"
-                         data-autoplayonlyfirsttime="false"></div>
-                    <!-- LAYER Text -->
-                    <div class="tp-caption color-yellow"
-                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['top','top','top','top']" data-voffset="['270','200','100','15']"
-                         data-fontsize="['60','50','40','40']"
-                         data-lineheight="['75','75','75','40']"
-                         data-width="['556','556','556','300']"
-                         data-height="['none','none','none','87']"
-                         data-whitespace="nowrap"
-
-                         data-type="text"
-                         data-responsive_offset="on"
-
-                         data-frames='[{"delay":100,"split":"chars","splitdelay":0.1,"speed":1480,"split_direction":"random","frame":"0","from":"y:50px;sX:1;sY:1;opacity:0;fb:20px;","color":"rgba(0,0,0,0)","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","color":"transparent","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                         data-textAlign="['center','center','center','center']"
-                         data-paddingtop="[0,0,0,0]"
-                         data-paddingright="[0,0,0,0]"
-                         data-paddingbottom="[0,0,0,0]"
-                         data-paddingleft="[0,0,0,0]"
-
-                         style="z-index: 10; min-width: 556px; max-width: 556px; white-space: nowrap; font-size: 60px; line-height: 75px; font-weight: 300; letter-spacing: 0px;font-family: 'Montserrat', sans-serif;"><img src="ad-agency/img/logo_main.png" class="link logo-translate h-100 w-100" alt="logo"></div>
-
-                    <!-- LAYER Text -->
-                    <div class="tp-caption color-white"
-                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['top','top','top','top']" data-voffset="['368','260','155','105']"
-                         data-fontsize="['62','50','40','40']"
-                         data-lineheight="['75','75','45','45']"
-                         data-width="['556','556','556','350']"
-                         data-height="['none','none','none','87']"
-                         data-whitespace="nowrap"
-
-                         data-type="text"
-                         data-responsive_offset="on"
-
-                         data-frames='[{"delay":150,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-
-                         data-textAlign="['center','center','center','center']"
-                         data-paddingtop="[0,0,0,0]"
-                         data-paddingright="[0,0,0,0]"
-                         data-paddingbottom="[0,0,0,0]"
-                         data-paddingleft="[0,0,0,0]"
-
-                         style="z-index: 10; min-width: 556px; max-width: 556px; white-space: nowrap; font-weight: 500; letter-spacing: 0px;font-family: 'Montserrat', sans-serif;"><div id="js-rotating"> </div> </div>
-
-                    <!-- LAYER Text -->
-                    <div class="tp-caption color-white font-30"
-                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['top','middle','middle','middle']" data-voffset="['520','95','0','20']"
-                         data-whitespace="normal"
-                         data-width="['580','630','550','440']"
-                         data-fontsize="['20','15','15','15']"
-                         data-lineheight="['30','25','22','22']"
-                         data-type="text"
-                         data-responsive_offset="on"
-                         data-frames='[{"delay":100,"speed":1480,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                         data-textAlign="['center','center','center','center']"
-                         data-paddingtop="[0,0,0,0]"
-                         data-paddingright="[0,0,0,0]"
-                         data-paddingbottom="[0,0,0,0]"
-                         data-paddingleft="[0,0,0,0]"
-
-                         style="z-index: 10; min-width: 650px; max-width: 650px; white-space: nowrap; font-weight: 300; letter-spacing: 1px;font-family: 'Source Sans Pro', sans-serif;" > <h3 style="word-spacing: 40px;">Where Odds Align</h3>
-                    </div>
-
-                    <!-- LAYER Button -->
-                    <!-- <div class="tp-caption tp-resizeme"
-                         data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['170','200','90','120']"
-                         data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":800,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:2px 2px 2px 2px;"}]'
-                         data-textAlign="['center','center','center','center']"
-                         data-width="['160','160','160','160']"
-                         style="z-index: 10; min-width: 960px; max-width: 960px">
-                        <a href="#about" class="btn-setting color-white btn-hvr-up btn-hvr-blue link">learn more</a>
-                    </div> -->
-
-
-                </li>
-            </ul>
-
-            <div class="tp-bannertimer" style="height: 5px; background: rgba(0,0,0,0.15);"></div>	</div>
-    </div>
-    <!--Main Slider ends -->
-
-</section>
-<!-- Main Section end -->
-
-<!--About start-->
-<section class="about overflow-visible bg-dark1 d-none">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 pr-5 mb-5 mb-lg-0 wow fadeInLeft">
-                <div class="rare-box"></div>
-                <img src="ad-agency/img/about.png" class="about-img-small position-relative w-100" alt="">
-            </div>
-            <div class="col-lg-6 pl-6">
-
-
-
-                <div class="main-title text-lg-left offset-md-1 mb-0 wow fadeInUp" data-wow-delay="300ms">
-                    <!-- <h5 class="wow fadeInUp" data-wow-delay="300ms"> Lorem ipsum dolor sit amet consectetur </h5> -->
-                    <h2 class="wow fadeInUp font-weight-light" data-wow-delay="400ms"> About <span class="color-blue">Us</span> </h2>
-                    <p class="pb-4 wow fadeInUp" data-wow-delay="500ms">Mission:</p>
-
-                    <ul class="pb-5 text-left wow fadeInUp" data-wow-delay="600ms">
-                        <li>
-                            Empower individuals and organizations to reach their full potential.
-                            </li>
-                    </ul>
-                    <p class="pb-4 wow fadeInUp" data-wow-delay="500ms">Commitment:
-                        </p>
-
-                    <ul class="pb-5 text-left wow fadeInUp" data-wow-delay="600ms">
-                        <li>
-                            Provide innovative solutions for personal and professional growth.</li>
-                    </ul>
-
-                    <a href="#services" class="btn-setting color-black btn-hvr-up btn-blue btn-hvr-blue text-white link wow fadeInUp" data-wow-delay="700ms">learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="p-0">
-    <div  class="bg-earth py-3" id="about">
-        
-        <div class="sec-title centered">
-            <h2 style="color: white;"> About Us</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-12">
-                <div class="d-flex justify-content-md-end justify-content-center">
-
-                    <img class="mission-img" src="ad-agency/img/mission_new.png" alt="">
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-12 d-flex justify-content-center flex-column">
-                <h3 class="p-3 mission-text">Empower individuals and orgranisations to reach their full potential</h3>
-            </div>
-            
-            <div class=" col-md-6 col-12 d-md-flex d-none justify-content-center flex-column">
-            <div class="d-flex justify-content-end">
-                <h3 class="p-3 vission-text">Provide innovative solutions for personal and professional growth</h3>
-            
-            </div>
-            
-            </div>
-            
-            <div class="col-md-6 col-12">
-                <div>
-                    <img class="mission-img" src="ad-agency/img/vission_new.png" alt="">
-                
-                </div>
-            </div>
-
-            <div class=" col-md-6 col-12 d-md-none d-flex justify-content-center flex-column">
-                <div class="d-flex justify-content-md-end justify-content-center">
-                    <h3 class="p-3 vission-text">Provide innovative solutions for personal and professional growth</h3>
-                
-                </div>
-                
-                </div>
-        </div>
-    </div>
-</section>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- About Boxes start -->
-<section class="bg-dark2" id="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                    <h2>We’re <span class="color-blue">Creative</span> Branding<br>and Corporate Identity <span class="color-blue">Agency</span></h2>
-                </div> -->
-                
-            <div class="sec-title centered">
-                <h2 style="color: white;">Our Services</h2>
-            </div>
-            </div>
-        </div>
-        <div class="row justify-content-around">
-                  <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
-                    <span class="pro-step d-inline-block color-white"><i class="fa-solid fa-podcast"></i></span>
-                    <br>
-                    <h3>White Label Projects</h3>
-                    
-                    <p class="font-weight-light color-white">For Publishers and 
-                        Brands</p>
-                    <p class="font-weight-light color-white">Podcasts and Talk 
-                        Shows</p>
-                    <p class="font-weight-light color-white">Events and IP's</p>
-                    
-                  </div>
-                  
-                  <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
-                    <span class="pro-step d-inline-block color-white"><i class="fa-solid fa-video"></i></span>
-                    <br>
-                    <h3>Production</h3>
-                    <p class="font-weight-light color-white">Short Movies & Web Series</p>
-                    <p class="font-weight-light color-white">Esports Productions</p>
-                    <p class="font-weight-light color-white">Photo Shoots</p>
-                    
-                  </div>
-                  
-                  <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
-                    <span class="pro-step d-inline-block color-white"><i class="fa-solid fa-gamepad"></i></span>
-                    <br>
-                    <h3>Game Development</h3>
-                
-                    <p class="font-weight-light color-white">Training Games</p>
-                    <p class="font-weight-light color-white"> AAA Games</p>
-                    <p class="font-weight-light color-white">Multiplayer Games</p>
-                    
-                  </div>
-
-        </div>
-        <div class="row mt-md-3 mt-0 justify-content-around">
-            
-            <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
-                <span class="pro-step d-inline-block color-white"><i class="fa fa-music"></i></span>
-                <br>
-                <h3>Music</h3>
-                
-                <p class="font-weight-light color-white">Hip Hop & Pop</p>
-                <p class="font-weight-light color-white">Metal Music</p>
-              </div>
-              
-              <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
-                <span class="pro-step d-inline-block color-white"><i class="fa-solid fa-users-rectangle"></i></span>
-                <br>
-                <h3>Talent Management</h3>
-                
-                <p class="font-weight-light color-white">Campaign Design</p>
-                <p class="font-weight-light color-white"> End to End Campaign 
-                    Execution</p>
-                <p class="font-weight-light color-white">Creator Development</p>
-              </div>
-              
-              <div class="card card-1 mt-md-0 mt-3 col-md-4 col-12 about-box">
-                <span class="pro-step d-inline-block color-white"><i class="fa-solid fa-photo-film"></i></span>
-                <br>
-                <h3>Media & Marketing</h3>
-                
-                <p class="font-weight-light color-white"> ROI Based Campaign</p>
-                <p class="font-weight-light color-white"> Meme Marketing</p>
-                
-              </div>
-
-        </div>
-       
-        </div>
-    </div>
-</section>
-<!-- About Boxes ends -->
-
-<section  id="team" class="bg-light-gray py-3 bg-dark1">
-    <section class="team-page-section">
-        <div class="px-md-5 mx-md-5 px-3">
-            <!-- Sec Title -->
-            <div class="sec-title centered">
-                <h2 style="color: white;">Our Team</h2>
-            </div>
-
-            <div class="row clearfix team-content owl-carousel">
-
-                <!-- Team Block -->
-                <div class="team-block col">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <ul class="social-icons">
-                            <li><a href="mailto:tushar@oddplanet.in"><i class="fab fa-google"></i></a></li>
-                            <li><a href="https://www.instagram.com/ojamaduji/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/ojamaduji/"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                        <div class="image">
-                            <a href="#"><img src="ad-agency/img/team/oja.jpg" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="#">Tushar Goyal </a></h3>
-                            <div class="designation">Founder & Chief Executive Officer</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Team Block -->
-                <div class="team-block col">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <ul class="social-icons">
-                            <li><a href="mailto:purvi.jain@oddplanet.in"><i class="fab fa-google"></i></a></li>
-                            <li><a href="https://www.instagram.com/sniipu/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/purvi1213/"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                        <div class="image">
-                            <a href="#"><img src="ad-agency/img/team/purvi.jpg" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="#">Purvi Jain </a></h3>
-                            <div class="designation">Executive Director - Client Partnerships </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="team-block col">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <ul class="social-icons">
-                            <li><a href="mailto:arjun.singh@oddplanet.in"><i class="fab fa-google"></i></a></li>
-                            <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
-                            <li><a href="https://www.linkedin.com/in/arjunsingh8/"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                        <div class="image">
-                            <a href="#"><img src="ad-agency/img/team/arjun.jpg" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="#">Arjun Singh </a></h3>
-                            <div class="designation">Chief Operations Strategist </div>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="team-block col">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <ul class="social-icons">
-                            <li><a href="mailto:ashutosh.jha@oddplanet.in"><i class="fab fa-google"></i></a></li>
-                            <li><a href="https://www.instagram.com/masterofficial67/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/ashutosh-jha-351bb9200/"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                        <div class="image">
-                            <a href="#"><img src="ad-agency/img/team/ashutosh.jpeg" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="#">Ashutosh Jha </a></h3>
-                            <div class="designation">Talent Acquisition and Partnership Manager </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="team-block col">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <ul class="social-icons">
-                            <li><a href="mailto:vrinda.goswami@oddplanet.in"><i class="fab fa-google"></i></a></li>
-                            <li><a href="https://www.instagram.com/vrinda_luv/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/vrinda-goswami-83075b1b5/"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                        <div class="image">
-                            <a href="#"><img src="ad-agency/img/team/vrinda.jpg" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="#">Vrinda Goswami  </a></h3>
-                            <div class="designation">Head Content Strategist </div>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-
+            <h1 class="hero-title">Where Odds Align</h1>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down bounce"></i>
             </div>
         </div>
     </section>
-</section>
 
-<!-- Quote start -->
-<section class="parallax-setting parallaxie parallax1 d-none">
-    <h2 class="d-none">heading</h2>
+    <!-- About Section -->
+    <section id="about" class="section">
         <div class="container">
-            <div class="row align-items-center position-relative">
-                <div class="col-md-12">
-                    <div class="quote-text text-center wow fadeInRight" data-wow-delay="300ms">
-                        <div class="quote d-flex justify-content-start mb-2rem"><i class="fa fa-quote-left"></i></div>
-                        <h2 class="font-weight-light mb-5 line-height-normal text-white"><span class="color-yellow">Creativity</span> is allowing yourself to make mistakes Art is knowing which ones to keep.</h2>
-                        <h3 class="color-blue">Alice Johnson</h3>
-                        <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i></div>
-                    </div>
+            <h2 class="section-title animate-on-scroll">About Us</h2>
+            <div class="about-grid">
+                <div class="about-card glass animate-on-scroll">
+                    <img src="ad-agency/img/mission_new.png" alt="Mission" style="height: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));">
+                    <h3 class="beautiful-text">Empower individuals and organisations to reach their full potential</h3>
+                </div>
+                <div class="about-card glass animate-on-scroll">
+                    <img src="ad-agency/img/vission_new.png" alt="Vision" style="height: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));">
+                    <h3 class="beautiful-text">Provide innovative solutions for personal and professional growth</h3>
                 </div>
             </div>
         </div>
-</section>
-<!-- Quote ends -->
+    </section>
 
-<!-- Work Starts -->
-<section id="work" class="py-0 bg-dark1">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                    <!-- <h5> Lorem ipsum dolor sit amet </h5> -->
-                    <!-- <h2 class="mb-0" style="font-size: 75px; font-weight: 500;">Our<span class="color-blue"> Partners</span> </h2> -->
-                    
-            <div class="sec-title wow fadeIn centered"  data-wow-delay="300ms">
-                <h2 style="color: white;">Our Works</h2>
-            </div>
-            </div>
-        </div>
-        <div class="row d-block">
-
-            <div id="js-filters-mosaic-flat" class="cbp-l-filters-alignCenter">
-                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item cbp-filter-style">
-                    All <div class="cbp-filter-counter"></div>
-                </div>
-                <div data-filter=".game-development" class="cbp-filter-item cbp-filter-style">
-                    Game Development <div class="cbp-filter-counter"></div>
-                </div>
-                <div data-filter=".music" class="cbp-filter-item cbp-filter-style">
-                    Music <div class="cbp-filter-counter"></div>
-                </div>
-                <div data-filter=".marketing" class="cbp-filter-item">
-                    Marketing <div class="cbp-filter-counter"></div>
-                </div>
-            </div>
-
-            <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat no-transition">
-                <div class="cbp-item music">
-                    <a href="ad-agency/img/work/Music/10.png" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Music/10.png" alt="work">
-                        </div>
-                    </a>
-                </div>
-                <div class="cbp-item game-development">
-                    <a href="ad-agency/img/work/Game Development/1.png" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Game Development/1.png" alt="work">
-                        </div>
-
-                    </a>
-                </div>
-                <div class="cbp-item game-development">
-                    <a href="ad-agency/img/work/Game Development/2.png" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Game Development/2.png" alt="work">
-                        </div>
-
-                    </a>
-                </div>
-                <!-- <div class="cbp-item seo marketing">
-                    <a href="ad-agency/img/work/6.jpg" class="cbp-caption cbp-lightbox" data-title="Remind~Me Widget<br>by Tiberiu Neamu">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/6.jpg" alt="work">
-                        </div>
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-                                    <p></p>
-                                    <div class="cbp-l-caption-title">Digital art works</div>
-                                    <span class="work-icon">
-                                            <i class="fa fa-arrow-right"></i>
-                                        </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div> -->
-
-                <div class="cbp-item marketing">
-                    <a href="ad-agency/img/work/Our Projects/7.png" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Our Projects/7.png" alt="work">
-                        </div>
-
-                    </a>
-                </div>
-                <div class="cbp-item game-development">
-                    <a href="ad-agency/img/work/Game Development/4.png" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Game Development/4.png" alt="work">
-                        </div>
-
-                    </a>
-                </div>
-                
-                <div class="cbp-item game-development">
-                    <a href="ad-agency/img/work/Game Development/5.png" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Game Development/5.png" alt="work">
-                        </div>
-
-                    </a>
-                </div>
-                
-                <div class="cbp-item music">
-                    <a href="ad-agency/img/work/Marketing/12.png" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Marketing/12.png" alt="work">
-                        </div>
-
-                    </a>
-                </div>
-                
-                <div class="cbp-item marketing">
-                    <a href="ad-agency/img/work/Marketing/14.png" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Marketing/14.png" alt="work">
-                        </div>
-
-                    </a>
-                </div>
-
-                
-                <div class="cbp-item marketing">
-                    <a href="ad-agency/img/work/Marketing/16.png" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Marketing/16.png" alt="work">
-                        </div>
-
-                    </a>
-                </div>
-
-                
-                <div class="cbp-item music">
-                    <a href="ad-agency/img/work/Music/11.png" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Music/11.png" alt="work">
-                        </div>
-
-                    </a>
-                </div>
-                
-                <div class="cbp-item music">
-                    <a href="ad-agency/img/work/Music/33.jpg" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Music/33.jpg" alt="work">
-                        </div>
-
-                    </a>
-                </div>
-                
-                <div class="cbp-item marketing">
-                    <a href="ad-agency/img/work/Our Projects/6.png" class="cbp-caption cbp-lightbox" data-title="">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="ad-agency/img/work/Our Projects/6.png" alt="work">
-                        </div>
-
-                    </a>
-                </div>
-                
-                
-
-            </div>
-        </div>
-    </div>
-</section>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-</script>
-
-<section id="section-sponsors" >
-    <div class="px-lg-5">
-        <div class="row">
-            <!-- <h2 class="text-white text-center w-100" data-wow-delay="300ms">Our <span class="color-blue"> Clients</span></h2> -->
-            
-            <div class="sec-title wow fadeIn centered w-100"  data-wow-delay="300ms">
-                <h2 style="color: white;">Our Clients</h2>
-            </div>
-            <!-- <div class="spacer-double"></div> -->
-            <!-- <div class="col-md-12 text-center wow fadeInUp" style="background: rgba(255,255,255,0.1); border-radius: 25px;"> -->
-            
-            <section class="customer-logos slider p-0 d-md-none d-block">
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i1.webp
-"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i2.png
-"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i3.png
-"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i4.png
-"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i5.png
-"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i6.png
-"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i7.png
-"></div>
-                <!-- <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i8.png
-"></div> -->
-                <!-- <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i9.png
-"></div> -->
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i10.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i11.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i12.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i13.png"></div>
-                <!-- <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i14.png"></div> -->
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i15.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i16.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i17.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i18.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i19.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i20.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i21.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i22.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i23.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i24.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i25.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i26.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i27.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i28.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i29.png"></div>
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i30.png"></div>
-                <!-- <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i31.png"></div> -->
-                <div class="slide"><img class="grey-hover" src="ad-agency/img/brands_new/i32.png"></div>
-            </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="col-md-12 text-center wow fadeInUp d-md-block d-none">
-                <!-- <h3>Gold Sponsors</h3> -->
-                <div class="spacer-single"></div>
-                <img src="ad-agency/img/brands/amazon.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/amd.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/binomo.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/boat.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/booyah.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/cellbell.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/14884_952f4880f805a.webp" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/converse.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/ea.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/embassy.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/garena.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/green soul.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/hyundai.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/iqoo.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/kaspersky.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/krafton.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/loco.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/mama earth.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/meta.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/mivi.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/mpl.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/msi.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/nimo.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/oneplus.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/realme.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/redbull.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/samsung.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/turnip.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/winzo.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/wow skin.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/x.png" alt="" class="grey-hover">
-                <img src="ad-agency/img/brands/zone.png" alt="" class="grey-hover">
-                <!-- <img src="ad-agency/img/brands/fanclash.png" alt="" class="grey-hover"> -->
-                <!-- <img src="ad-agency/img/brands/rooter.png" alt="" class="grey-hover"> -->
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Pricing start -->
-<section id="pricing" class="bg-light-gray pricing-padding bg-dark2 d-none">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                    <h5> Lorem ipsum dolor sit amet </h5>
-                    <h2 class="mb-0">Flexible<span class="color-blue"> Pricing</span> Packages </h2>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-66px mt-xs-4rem">
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-xs-5 wow fadeInUp">
-                <div class="pricing-item hvr-bg-blue">
-                    <div class="price-box clearfix">
-                        <div class="price_title">
-                            <h4 class="text-capitalize">Basic</h4>
-                        </div>
-                    </div>
-                    <div class="price">
-                        <h2 class="position-relative"><span class="dollar">$</span>19<span class="month">/ month</span></h2>
-                    </div>
-                    <div class="price-description">
-                        <p>Full Access</p>
-                        <p>Unlimited Bandwidth</p>
-                        <p>Email Accounts</p>
-                        <p>8 Free Forks Every Months</p>
-                    </div>
-                    <div class="text-center">
-                        <a href="javascript:void(0)" class="btn-setting color-black btn-hvr-up btn-blue btn-hvr-white">learn more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-xs-5 wow fadeInUp">
-                <div class="pricing-item price-transform hvr-bg-blue">
-                    <div class="quarter-triangle"></div>
-
-                    <div class="triangle-inner-content">
-                        <i class="fa fa-star"></i>
-                        <span> SPECIAL </span>
-                    </div>
-
-                    <div class="price-box2 clearfix">
-                        <div class="price_title">
-                            <h4 class="text-capitalize m-0">Standard</h4>
-                            <p class="price-sub-heading text-capitalize">the most popular</p>
-                        </div>
-                    </div>
-                    <div class="price">
-                        <h2 class="position-relative"><span class="dollar">$</span>29<span class="month">/ month</span></h2>
-                    </div>
-                    <div class="price-description">
-                        <p> Full Access</p>
-                        <p>Unlimited Bandwidth</p>
-                        <p>Email Accounts</p>
-                        <p>8 Free Forks Every Months</p>
-                    </div>
-                    <div class="text-center">
-                        <a href="javascript:void(0)" class="btn-setting color-black btn-hvr-up btn-yellow btn-hvr-white">learn more</a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12 text-center wow fadeInUp">
-                <div class="pricing-item hvr-bg-blue">
-                    <div class="price-box clearfix">
-                        <div class="price_title">
-                            <h4 class="text-capitalize">Advance</h4>
-                        </div>
-                    </div>
-                    <div class="price">
-                        <h2 class="position-relative"><span class="dollar">$</span>49<span class="month">/ month</span></h2>
-                    </div>
-                    <div class="price-description">
-                        <p> Full Access</p>
-                        <p>Unlimited Bandwidth</p>
-                        <p>Email Accounts</p>
-                        <p>8 Free Forks Every Months</p>
-                    </div>
-                    <div class="text-center">
-                        <a href="javascript:void(0)" class="btn-setting color-black btn-hvr-up btn-pink btn-hvr-white">learn more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Pricing ends -->
-
-<!-- Clients start -->
-<section id="clients" class="bg-white p-0 cursor-light no-transition">
-    <h2 class="d-none">heading</h2>
-    <div class="section-padding parallax-setting parallaxie parallax2">
+    <!-- Services Section -->
+    <section id="services" class="section bg-gradient">
         <div class="container">
-            <!-- <div class="row">
-                <div class="col-md-12">
-                    <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                        <h2 class="mb-0">Client<span class="color-blue"> Testimonials</span></h2>
-                    </div>
+            <h2 class="section-title animate-on-scroll">Our Services</h2>
+            <div class="services-grid">
+                <!-- White Label Projects -->
+                <div class="service-card glass animate-on-scroll">
+                    <div class="icon-wrap"><i class="fa-solid fa-podcast"></i></div>
+                    <h3>White Label Projects</h3>
+                    <ul>
+                        <li>For Publishers and Brands</li>
+                        <li>Podcasts and Talk Shows</li>
+                        <li>Events and IP's</li>
+                    </ul>
                 </div>
-            </div> -->
-
-            <!-- <div class="testimonial-images">
-                <div class="owl-thumbs owl-dots d-lg-block d-none">
-                    <div class="owl-dot animated-wrap active"><img src="ad-agency/img/testimonial1.png" alt="" class="animated-element"></div>
-                    <div class="owl-dot animated-wrap"><img src="ad-agency/img/testimonial2.png" alt="" class="animated-element"></div>
-                    <div class="owl-dot animated-wrap"><img src="ad-agency/img/testimonial3.png" alt="" class="animated-element"></div>
-                    <div class="owl-dot animated-wrap"><img src="ad-agency/img/testimonial4.png" alt="" class="animated-element"></div>
-
-                    <div class="owl-dot animated-wrap"><img src="ad-agency/img/testimonial5.png" alt="" class="animated-element"></div>
-                    <div class="owl-dot animated-wrap"><img src="ad-agency/img/testimonial6.png" alt="" class="animated-element"></div>
-                    <div class="owl-dot animated-wrap"><img src="ad-agency/img/testimonial7.jpg" alt="" class="animated-element"></div>
-                    <div class="owl-dot animated-wrap"><img src="ad-agency/img/testimonial8.jpg" alt="" class="animated-element"></div>
+                <!-- Production -->
+                <div class="service-card glass animate-on-scroll">
+                    <div class="icon-wrap"><i class="fa-solid fa-video"></i></div>
+                    <h3>Production</h3>
+                    <ul>
+                        <li>Short Movies & Web Series</li>
+                        <li>Esports Productions</li>
+                        <li>Photo Shoots</li>
+                    </ul>
                 </div>
-            </div> -->
-
-            <div class="row align-items-center position-relative">
-                <div class="col-md-12">
-                    <div class="testimonial-area">
-                        <div class="container">
-                            <div class="sec-title white-title">
-                                <h2>Testimonials</h2>
-                                <p>What Client Say About Us?</p>
-                            </div>
-                            <div class="testimonial-content owl-carousel ml-2">
-                                <!-- Single Testimonial -->
-                                <div class="single-testimonial">
-                                    <div class="round-1 round"></div>
-                                    <div class="round-2 round"></div>
-                                    <p>I wanted to express my heartfelt appreciation for your exceptional event and talent management services. From planning to execution, your team's professionalism and talent coordination were impressive. Your ability to handle challenges and deliver a memorable event made a significant impact.</p>
-                                    <div class="client-info">
-                                        <div class="client-details">
-                                            <h6>Krishna Shukla</h6>
-                                            <span>Head of partnerships at STANVERSE TECHNOLOGIES</span>
-                                        </div>
-                                    </div>
-                    
-                                </div>
-                                <!-- Single Testimonial -->
-                                <div class="single-testimonial">
-                                    <div class="round-1 round"></div>
-                                    <div class="round-2 round"></div>
-                                    <p>Oddplanet is a strong and influencer friendly marketing agency. They have the most innovative ideas and definitely one of the best organizations in gaming industry.</p>
-                                    <br><br>
-                                    <div class="client-info">
-                                        <div class="client-details">
-                                            <h6>Dr.Yashwanth A R </h6>
-                                            <span>Founder- TrueRippers Esports LLP</span>
-                                        </div>
-                                    </div>
-                    
-                                </div>
-                                <!-- Single Testimonial -->
-                                <div class="single-testimonial">
-                                    <div class="round-1 round"></div>
-                                    <div class="round-2 round"></div>
-                                    <p>Working with Odd Planet on various media projects has been an absolute pleasure. Their professionalism and dedication shine through in every aspect, from event planning to content production.</p>
-                                    <br>
-                                    <div class="client-info">
-                                        <div class="client-details">
-                                            <h6>Mohammed Abdul Bari Anwar</h6>
-                                            <span>Senior Gaming manager @ India Today Group</span>
-                                        </div>
-                                    </div>
-                                    <br>
-                    
-                                </div>
-                                
-                                <div class="single-testimonial">
-                                    <div class="round-1 round"></div>
-                                    <div class="round-2 round"></div>
-                                    <p>Partnering with Odd Planet has been a game-changer for our business. Their expertise in managing white-label projects has streamlined our operations and enhanced our offerings, allowing us to deliver exceptional value to our clients. </p>
-                                    <br>
-                                    <div class="client-info">
-                                        <div class="client-details">
-                                            <h6>Vikash Khichi</h6>
-                                            <span>Founder, Modern Vintage Films</span>
-                                        </div>
-                                    </div>
-                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-carousel owl-theme testimonial-two hide-cursor mx-auto wow zoomIn d-none" data-wow-delay="400ms">
-                        <div class="testimonial-item">
-                            <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
-                            <div class="testimonial-post">
-                                <a href="javascript:void(0)" class="post"><img src="ad-agency/img/testimonial1.png" alt="image"></a>
-                                <div class="text-content">
-                                    <h5 class="color-white text-capitalize">David Walker</h5>
-                                    <p class="color-white"> Chairman, AcroEx </p>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item hide-cursor d-none">
-                            <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
-
-                            <div class="testimonial-post">
-                                <!-- <a href="javascript:void(0)" class="post"><img src="ad-agency/img/testimonial2.png" alt="image"></a> -->
-                                <div class="text-content">
-                                    <h5 class="color-white text-capitalize">Christina Williams</h5>
-                                    <p class="color-white"> HR Manager </p>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item  d-none">
-                            <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
-
-                            <div class="testimonial-post">
-                                <!-- <a href="javascript:void(0)" class="post"><img src="ad-agency/img/testimonial3.png" alt="image"></a> -->
-                                <div class="text-content">
-                                    <h5 class="color-white text-capitalize">Sarah Jones</h5>
-                                    <p class="color-white"> Sales Executive </p>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item  d-none">
-                            <p class="color-white testimonial-para mb-15px"> Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
-
-                            <div class="testimonial-post">
-                                <!-- <a href="javascript:void(0)" class="post"><img src="ad-agency/img/testimonial4.png" alt="image"></a> -->
-                                <div class="text-content">
-                                    <h5 class="color-white text-capitalize">Chris Gorgano</h5>
-                                    <p class="color-white"> Photographer </p>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                <!-- Game Development -->
+                <div class="service-card glass animate-on-scroll">
+                    <div class="icon-wrap"><i class="fa-solid fa-gamepad"></i></div>
+                    <h3>Game Development</h3>
+                    <ul>
+                        <li>Training Games</li>
+                        <li>AAA Games</li>
+                        <li>Multiplayer Games</li>
+                    </ul>
+                </div>
+                <!-- Music -->
+                <div class="service-card glass animate-on-scroll">
+                    <div class="icon-wrap"><i class="fa fa-music"></i></div>
+                    <h3>Music</h3>
+                    <ul>
+                        <li>Hip Hop & Pop</li>
+                        <li>Metal Music</li>
+                    </ul>
+                </div>
+                <!-- Talent Management -->
+                <div class="service-card glass animate-on-scroll">
+                    <div class="icon-wrap"><i class="fa-solid fa-users-rectangle"></i></div>
+                    <h3>Talent Management</h3>
+                    <ul>
+                        <li>Campaign Design</li>
+                        <li>End to End Campaign Execution</li>
+                        <li>Creator Development</li>
+                    </ul>
+                </div>
+                <!-- Media & Marketing -->
+                <div class="service-card glass animate-on-scroll">
+                    <div class="icon-wrap"><i class="fa-solid fa-photo-film"></i></div>
+                    <h3>Media & Marketing</h3>
+                    <ul>
+                        <li>ROI Based Campaign</li>
+                        <li>Meme Marketing</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- Clients ends -->
+    </section>
 
-<!-- Blog start -->
-<section id="blog" class="half-section p-0 bg-change bg-yellow d-none">
-    <h2 class="d-none">heading</h2>
-    <div class="container-fluid">
-        <div class="row align-items-center">
-
-            <div class="col-lg-6 col-md-12 p-0">
-                <div class="hover-effect">
-                    <img alt="blog" src="ad-agency/img/split-blog.jpg" class="about-img">
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-12 p-lg-0">
-                <div class="split-container-setting style-three text-center">
-                    <div class="main-title mb-5 wow fadeIn" data-wow-delay="300ms">
-                        <h5 class="font-18 text-blue"> Oct 12, 2019</h5>
-                        <h2 class="mb-0 font-weight-normal"> Agency Blog </h2>
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Our Team</h2>
+            <div class="swiper team-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Tushar -->
+                    <div class="swiper-slide">
+                        <div class="team-card glass animate-on-scroll">
+                            <div class="img-wrapper"><img src="ad-agency/img/team/oja.jpg" alt="Tushar Goyal"></div>
+                            <div class="team-info">
+                                <h3>Tushar Goyal</h3>
+                                <p>Founder & CEO</p>
+                                <div class="social-links">
+                                    <a href="mailto:tushar@oddplanet.in"><i class="fab fa-google"></i></a>
+                                    <a href="https://www.instagram.com/ojamaduji/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/ojamaduji/"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="color-black mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodt temp to the incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis a nostr a exercitation ullamco laboris nisi ut aliquip.</p>
-
-                    <a href="ad-agency/blog.html" class="btn-setting color-black btn-hvr-up btn-blue btn-hvr-pink">learn more</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- Blog ends -->
-
-<!-- Contact & Map starts -->
-<section id="contact" class="bg-light-gray bg-dark1 d-none">
-    <div class="container">
-        <div class="row mx-lg-0">
-            <div class="col-12 e p-0">
-                <div class="contact-box bg-dark2">
-                    <div class="main-title text-center text-md-left mb-4">
-                        <h2 class="font-weight-normal text-center">Connect With Us </h2>
+                    <!-- Purvi -->
+                    <div class="swiper-slide">
+                        <div class="team-card glass animate-on-scroll">
+                            <div class="img-wrapper"><img src="ad-agency/img/team/purvi.jpg" alt="Purvi Jain"></div>
+                            <div class="team-info">
+                                <h3>Purvi Jain</h3>
+                                <p>Executive Director</p>
+                                <div class="social-links">
+                                    <a href="mailto:purvi.jain@oddplanet.in"><i class="fab fa-google"></i></a>
+                                    <a href="https://www.instagram.com/sniipu/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/purvi1213/"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-
-                    <div class="text-center text-md-left">
-
-                        <!--Address-->
-                        <p class="mb-3 text-center">
-                            <a href="https://www.linkedin.com/in/ojamaduji/" class="color-white">Tushar Goyal</a>
-                             </p>
-<br>
-                        <!--Phone-->
-                        <p class="mb-3 text-center"> <a href="https://linkedin.com/purvi121" class="color-white">Purvi</a> </p>
-                             <br>
-                        <!--Email-->
-                        <p class="mb-3 text-center"> <a href="mailto:business@oddplanet.in" class="color-white">Business@oddplanet.in</a>
-                            <br>
-
-                        <!--Timing-->
-                        <!-- <p class="mb-0">Mon-Sat: 9am to 6pm</p> -->
+                    <!-- Arjun -->
+                    <div class="swiper-slide">
+                        <div class="team-card glass animate-on-scroll">
+                            <div class="img-wrapper"><img src="ad-agency/img/team/arjun.jpg" alt="Arjun Singh"></div>
+                            <div class="team-info">
+                                <h3>Arjun Singh</h3>
+                                <p>Chief Operations Strategist</p>
+                                <div class="social-links">
+                                    <a href="mailto:arjun.singh@oddplanet.in"><i class="fab fa-google"></i></a>
+                                    <a href="https://www.linkedin.com/in/arjunsingh8/"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ashutosh -->
+                    <div class="swiper-slide">
+                        <div class="team-card glass animate-on-scroll">
+                            <div class="img-wrapper"><img src="ad-agency/img/team/ashutosh.jpeg" alt="Ashutosh Jha"></div>
+                            <div class="team-info">
+                                <h3>Ashutosh Jha</h3>
+                                <p>Talent Acquisition</p>
+                                <div class="social-links">
+                                    <a href="mailto:ashutosh.jha@oddplanet.in"><i class="fab fa-google"></i></a>
+                                    <a href="https://www.instagram.com/masterofficial67/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/ashutosh-jha-351bb9200/"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Vrinda -->
+                    <div class="swiper-slide">
+                        <div class="team-card glass animate-on-scroll">
+                            <div class="img-wrapper"><img src="ad-agency/img/team/vrinda.jpg" alt="Vrinda Goswami"></div>
+                            <div class="team-info">
+                                <h3>Vrinda Goswami</h3>
+                                <p>Head Content Strategist</p>
+                                <div class="social-links">
+                                    <a href="mailto:vrinda.goswami@oddplanet.in"><i class="fab fa-google"></i></a>
+                                    <a href="https://www.instagram.com/vrinda_luv/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/vrinda-goswami-83075b1b5/"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- <div class="col-lg-6 col-md-6 col-sm-12 p-0 col-map box-shadow-map">
-                <div id="google-map" class="bg-light-gray map"></div>
-            </div> -->
-        </div>
-    </div>
-</section>
-<!-- Contact & Map ends -->
-
-<!-- Footer starts -->
-<footer class="p-half  bg-dark2">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
-                <ul class="footer-icons mb-4">
-                    <li><a href="https://www.facebook.com/profile.php?id=61555456150796" class="wow fadeInUp facebook"><i class="fab fa-facebook-f"></i> </a> </li>
-                    <li><a href="https://www.instagram.com/oddplanet.in/" class="wow fadeInDown linkedin"><i class="fab fa-linkedin-in"></i> </a> </li>
-                    <li><a href="https://www.linkedin.com/company/odd-planet" class="wow fadeInUp instagram"><i class="fab fa-instagram"></i> </a> </li>
-                    <!-- <li><a href="javascript:void(0)" class="wow fadeInDown twitter"><i class="fab fa-twitter"></i> </a> </li> -->
-                    <!-- <li><a href="javascript:void(0)" class="wow fadeInUp google"><i class="fab fa-google"></i> </a> </li> -->
-                    <!-- <li><a href="javascript:void(0)" class="wow fadeInDown pinterest"><i class="fab fa-pinterest-p"></i> </a> </li> -->
-                </ul>
-                <!-- <p class="text-white">Made With &#9825; by <a href="https://ajaystark.github.io/" class="text-white">Ajay</a>  </p> -->
-            
+                <div class="swiper-pagination team-pagination"></div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- Footer ends -->
+    </section>
 
-<!--Animated Cursor-->
-<div id="animated-cursor">
-    <div id="cursor">
-        <div id="cursor-loader"></div>
-    </div>
-</div>
-<!--Animated Cursor End-->
+    <!-- Work Section -->
+    <section id="work" class="section bg-gradient">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Our Works</h2>
+            <div class="work-grid">
+                <a href="ad-agency/img/work/Music/10.png" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Music/10.png" alt="Work"></a>
+                <a href="ad-agency/img/work/Game Development/1.png" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Game Development/1.png" alt="Work"></a>
+                <a href="ad-agency/img/work/Game Development/2.png" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Game Development/2.png" alt="Work"></a>
+                <a href="ad-agency/img/work/Our Projects/7.png" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Our Projects/7.png" alt="Work"></a>
+                <a href="ad-agency/img/work/Game Development/4.png" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Game Development/4.png" alt="Work"></a>
+                <a href="ad-agency/img/work/Game Development/5.png" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Game Development/5.png" alt="Work"></a>
+                <a href="ad-agency/img/work/Marketing/12.png" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Marketing/12.png" alt="Work"></a>
+                <a href="ad-agency/img/work/Marketing/14.png" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Marketing/14.png" alt="Work"></a>
+                <a href="ad-agency/img/work/Marketing/16.png" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Marketing/16.png" alt="Work"></a>
+                <a href="ad-agency/img/work/Music/11.png" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Music/11.png" alt="Work"></a>
+                <a href="ad-agency/img/work/Music/33.jpg" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Music/33.jpg" alt="Work"></a>
+                <a href="ad-agency/img/work/Our Projects/6.png" class="glightbox work-item animate-on-scroll"><img src="ad-agency/img/work/Our Projects/6.png" alt="Work"></a>
+            </div>
+        </div>
+    </section>
 
-<!-- JavaScript -->
-<script src="vendor/js/bundle.min.js"></script>
+    <!-- Clients Section -->
+    <section id="clients" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Testimonials</h2>
+            <div class="swiper testimonial-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card glass animate-on-scroll">
+                            <p>"I wanted to express my heartfelt appreciation for your exceptional event and talent management services. From planning to execution, your team's professionalism and talent coordination were impressive."</p>
+                            <h4>Krishna Shukla</h4>
+                            <span>STANVERSE TECHNOLOGIES</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card glass animate-on-scroll">
+                            <p>"Oddplanet is a strong and influencer friendly marketing agency. They have the most innovative ideas and definitely one of the best organizations in gaming industry."</p>
+                            <h4>Dr.Yashwanth A R</h4>
+                            <span>TrueRippers Esports LLP</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card glass animate-on-scroll">
+                            <p>"Working with Odd Planet on various media projects has been an absolute pleasure. Their professionalism and dedication shine through in every aspect, from event planning to content production."</p>
+                            <h4>Mohammed Abdul Bari Anwar</h4>
+                            <span>India Today Group</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card glass animate-on-scroll">
+                            <p>"Partnering with Odd Planet has been a game-changer for our business. Their expertise in managing white-label projects has streamlined our operations and enhanced our offerings."</p>
+                            <h4>Vikash Khichi</h4>
+                            <span>Modern Vintage Films</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination testimonial-pagination"></div>
+            </div>
 
-<!-- Plugin Js -->
-<script src="vendor/js/jquery.fancybox.min.js"></script>
-<script src="vendor/js/owl.carousel.min.js"></script>
-<script src="vendor/js/swiper.min.js"></script>
-<script src="vendor/js/jquery.cubeportfolio.min.js"></script>
-<script src="vendor/js/jquery.appear.js"></script>
-<script src="vendor/js/parallaxie.min.js"></script>
-<script src="vendor/js/wow.min.js"></script>
-<!-- Owl Carousel JS File -->
-<script src="ad-agency/js/owl.carousel.js"></script>
-<!-- Slick JS File -->
-<script src="vendor/js/slick.min.js"></script>
-<!-- Tween Max Animation File -->
-<script src="ad-agency/js/TweenMax.min.js"></script>
-<!-- Morphtext File -->
-<script src="ad-agency/js/morphext.min.js"></script>
-<!-- REVOLUTION JS FILES -->
-<script src="vendor/js/jquery.themepunch.tools.min.js"></script>
-<script src="vendor/js/jquery.themepunch.revolution.min.js"></script>
-<!-- SLIDER REVOLUTION EXTENSIONS -->
-<script src="vendor/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.video.min.js"></script>
+            <h2 class="section-title mt-5">Our Clients</h2>
+            <div class="swiper clients-swiper">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/amazon.png" alt="Amazon"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/amd.png" alt="AMD"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/binomo.png" alt="Binomo"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/boat.png" alt="Boat"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/booyah.png" alt="Booyah"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/cellbell.png" alt="Cellbell"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/14884_952f4880f805a.webp" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/converse.png" alt="Converse"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/ea.png" alt="EA"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/embassy.png" alt="Embassy"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/garena.png" alt="Garena"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/green soul.png" alt="Green Soul"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/hyundai.png" alt="Hyundai"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/iqoo.png" alt="iQOO"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/kaspersky.png" alt="Kaspersky"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/krafton.png" alt="Krafton"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/loco.png" alt="Loco"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/mama earth.png" alt="Mama Earth"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/meta.png" alt="Meta"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/mivi.png" alt="Mivi"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/mpl.png" alt="MPL"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/msi.png" alt="MSI"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/nimo.png" alt="Nimo"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/oneplus.png" alt="OnePlus"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/realme.png" alt="Realme"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/redbull.png" alt="Redbull"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/samsung.png" alt="Samsung"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/turnip.png" alt="Turnip"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/winzo.png" alt="Winzo"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/wow skin.png" alt="Wow Skin"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/x.png" alt="X"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands/zone.png" alt="Zone"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i1.webp" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i2.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i3.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i4.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i5.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i6.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i7.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i10.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i11.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i12.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i13.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i15.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i16.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i17.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i18.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i19.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i20.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i21.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i22.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i23.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i24.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i25.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i26.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i27.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i28.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i29.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i30.png" alt="Client"></div>
+                    <div class="swiper-slide"><img src="ad-agency/img/brands_new/i32.png" alt="Client"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Google Map Api -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw"></script>
-<script src="ad-agency/js/maps.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer-title">Connect With Us</h2>
+            <div class="contact-info">
+                <a href="mailto:business@oddplanet.in">business@oddplanet.in</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61555456150796"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/oddplanet.in/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/odd-planet"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 Odd Planet. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-<!-- custom script -->
-<script src="ad-agency/js/script.js"></script>
-
-
-<script>
-    $(".testimonial-content").owlCarousel({
-	loop: true,
-	items: 2,
-	margin: 50,
-	dots: true,
-	nav: false,
-	mouseDrag: true,
-	autoplay: false,
-	autoplayTimeout: 4000,
-	smartSpeed: 800,
-    responsive:{
-        0: {
-      items: 1
-    },
-
-    900: {
-      items: 2
-    },
-
-    1024: {
-      items: 2
-    },
-
-    1366: {
-      items: 2
-    }
-    }
-});
-
-
-$(".team-content").owlCarousel({
-	loop: true,
-	items: 2,
-	margin: 50,
-	dots: true,
-	nav: false,
-	mouseDrag: true,
-	autoplay: false,
-	autoplayTimeout: 4000,
-	smartSpeed: 800,
-    responsive:{
-        0: {
-      items: 1
-    },
-
-    900: {
-      items: 4
-    },
-
-    1024: {
-      items: 4
-    },
-
-    1366: {
-      items: 4
-    }
-    }
-});
-
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.swiper', {
-  loop: true, 
-  slidesPerView: "auto",
-  centeredSlides: true,
-  observeParents: !0,
-  observer: !0
-});
-
-
-</script>
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- Three.js for Rotating Earth -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="ad-agency/js/script.js"></script>
 </body>
 </html>

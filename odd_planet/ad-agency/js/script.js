@@ -1,501 +1,241 @@
-jQuery(window).on("load", function () {
-    "use strict";
-
-    /*  ===================================
-     Loading Timeout
-     ====================================== */
-    $("#loader-fade").fadeOut(800);
-});
-
-jQuery(function ($) {
-    "use strict";
-
-    var $window = $(window);
-    var windowsize = $(window).width();
-
-    /* ===================================
-       Nav Scroll
-       ====================================== */
-
-    $(".scroll").on("click", function(event){
-        event.preventDefault();
-        $('html,body').animate({
-            scrollTop: $(this.hash).offset().top - 40}, 1100);
-    });
-    /* ====================================
-       Nav Fixed On Scroll
-       ======================================= */
-
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() >= 80) { // Set position from top to add class
-            $('header').addClass('header-appear');
-        }
-        else {
-            $('header').removeClass('header-appear');
+document.addEventListener('DOMContentLoaded', () => {
+    // --- Navbar Scroll ---
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
         }
     });
-    /*bottom menu fix*/
-    if ($("nav.navbar").hasClass("bottom-nav")) {
-        var navHeight = $(".bottom-nav").offset().top;
-        $(window).on("scroll", function () {
-            if ($window.scrollTop() > navHeight) {
-                $('header').addClass('header-appear');
-            } else {
-                $('header').removeClass('header-appear');
+
+    // --- Scroll Animations ---
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
             }
         });
-    }
+    }, observerOptions);
 
-    /* ===================================
-       Side Menu
-       ====================================== */
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        observer.observe(el);
+    });
 
-    if ($(".sidemenu_toggle").length) {
-        $(".sidemenu_toggle").on("click", function () {
-            $(".pushwrap").toggleClass("active");
-            $(".side-menu").addClass("side-menu-active"), $("#close_side_menu").fadeIn(700)
-        }), $("#close_side_menu").on("click", function () {
-            $(".side-menu").removeClass("side-menu-active"), $(this).fadeOut(200), $(".pushwrap").removeClass("active")
-        }), $(".side-nav .navbar-nav .nav-link").on("click", function () {
-            $(".side-menu").removeClass("side-menu-active"), $("#close_side_menu").fadeOut(200), $(".pushwrap").removeClass("active")
-        }), $("#btn_sideNavClose").on("click", function () {
-            $(".side-menu").removeClass("side-menu-active"), $("#close_side_menu").fadeOut(200), $(".pushwrap").removeClass("active")
-        })
-    }
-    /* =====================================
-       Wow
-       ======================================== */
+    // --- Mobile Menu ---
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const closeMenu = document.querySelector('.close-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-menu nav a');
 
-    if ($(window).width() > 767) {
-        var wow = new WOW({
-            boxClass: 'wow',
-            animateClass: 'animated',
-            offset: 0,
-            mobile: false,
-            live: true
+    if (hamburger && mobileMenu && closeMenu) {
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
         });
-        new WOW().init();
-    }
 
-    /* ===================================
-        Animated Cursor
-       ====================================== */
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
 
-    function animatedCursor() {
-
-        if ($("#animated-cursor").length) {
-
-            var e = {x: 0, y: 0}, t = {x: 0, y: 0}, n = .25, o = !1, a =    document.getElementById("cursor"),
-                i = document.getElementById("cursor-loader");
-            TweenLite.set(a, {xPercent: -50, yPercent: -50}), document.addEventListener("mousemove", function (t) {
-                var n = window.pageYOffset || document.documentElement.scrollTop;
-                e.x = t.pageX, e.y = t.pageY - n
-            }), TweenLite.ticker.addEventListener("tick", function () {
-                o || (t.x += (e.x - t.x) * n, t.y += (e.y - t.y) * n, TweenLite.set(a, {x: t.x, y: t.y}))
-            }),
-                $(".animated-wrap").mouseenter(function (e) {
-                    TweenMax.to(this, .3, {scale: 2}), TweenMax.to(a, .3, {
-                        scale: 2,
-                        borderWidth: "1px",
-                        opacity: .2
-                    }), TweenMax.to(i, .3, {
-                        scale: 2,
-                        borderWidth: "1px",
-                        top: 1,
-                        left: 1
-                    }), TweenMax.to($(this).children(), .3, {scale: .5}), o = !0
-                }),
-                $(".animated-wrap").mouseleave(function (e) {
-                    TweenMax.to(this, .3, {scale: 1}), TweenMax.to(a, .3, {
-                        scale: 1,
-                        borderWidth: "2px",
-                        opacity: 1
-                    }), TweenMax.to(i, .3, {
-                        scale: 1,
-                        borderWidth: "2px",
-                        top: 0,
-                        left: 0
-                    }), TweenMax.to($(this).children(), .3, {scale: 1, x: 0, y: 0}), o = !1
-                }),
-
-                $(".testimonial-images .animated-wrap").mouseenter(function (e) {
-                    TweenMax.to(this, .3, {scale: 2}), TweenMax.to(a, .3, {
-                        scale: 2,
-                        borderWidth: "1px",
-                        opacity: .2
-                    }), TweenMax.to(i, .3, {
-                        scale: 2,
-                        borderWidth: "1px",
-                        top: 1,
-                        left: 1
-                    }), TweenMax.to($(this).children(), .3, {scale: .5}), o = !0
-                }),
-
-                $(".animated-wrap").mousemove(function (e) {
-                    var n, o, i, l, r, d, c, s, p, h, x, u, w, f, m;
-                    n = e, o = 2, i = this.getBoundingClientRect(), l = n.pageX - i.left, r = n.pageY - i.top, d = window.pageYOffset || document.documentElement.scrollTop, t.x = i.left + i.width / 2 + (l - i.width / 2) / o, t.y = i.top + i.height / 2 + (r - i.height / 2 - d) / o, TweenMax.to(a, .3, {
-                        x: t.x,
-                        y: t.y
-                    }), s = e, p = c = this, h = c.querySelector(".animated-element"), x = 20, u = p.getBoundingClientRect(), w = s.pageX - u.left, f = s.pageY - u.top, m = window.pageYOffset || document.documentElement.scrollTop, TweenMax.to(h, .3, {
-                        x: (w - u.width / 2) / u.width * x,
-                        y: (f - u.height / 2 - m) / u.height * x,
-                        ease: Power2.easeOut
-                    })
-                }),
-                $(".hide-cursor,.btn,.tp-bullets").mouseenter(function (e) {
-                    TweenMax.to("#cursor", .2, {borderWidth: "1px", scale: 2, opacity: 0})
-                }), $(".hide-cursor,.btn,.tp-bullets").mouseleave(function (e) {
-                TweenMax.to("#cursor", .3, {borderWidth: "2px", scale: 1, opacity: 1})
-            }),$(".link").mouseenter(function (e) {
-                TweenMax.to("#cursor", .2, {
-                    borderWidth: "0px",
-                    scale: 3,
-                    backgroundColor: "rgba(255,255,255,0.47)",
-                    opacity: .15
-                })
-            }), $(".link").mouseleave(function (e) {
-                TweenMax.to("#cursor", .3, {
-                    borderWidth: "2px",
-                    scale: 1,
-                    backgroundColor: "rgba(255, 255, 255, 0)",
-                    opacity: 1
-                })
-            })
-
-        }
-
-    }
-
-    if ($(window).width() > 991) {
-        setTimeout(function () {
-            animatedCursor();
-        }, 1000);
-    }
-    /* ===================================
-       Features Section Number Scroller
-       ====================================== */
-
-    $(".stats").each(function () {
-        $('.numscroller').appear(function () {
-            $(this).prop('Counter',0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 5000,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
             });
         });
-    });
+    }
 
+    // --- Swiper Init ---
+    if (typeof Swiper !== 'undefined') {
+        new Swiper('.team-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.team-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: { slidesPerView: 2 },
+                992: { slidesPerView: 3 },
+                1200: { slidesPerView: 4 }
+            }
+        });
 
-    /* ===================================
-       Parallax
-       ====================================== */
+        new Swiper('.testimonial-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.testimonial-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                992: { slidesPerView: 2 }
+            }
+        });
 
-    if (windowsize > 992) {
-        $(".parallaxie").parallaxie({
-            speed: 0.4,
-            offset: 0
+        new Swiper('.clients-swiper', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            speed: 3000,
+            breakpoints: {
+                640: { slidesPerView: 4 },
+                992: { slidesPerView: 6 },
+                1200: { slidesPerView: 8 }
+            }
         });
     }
 
-    /* ===================================
-       Cube Portfolio
-       ====================================== */
-
-    (function ($, window, document, undefined) {
-
-        // init cubeportfolio
-        $('#js-grid-mosaic-flat').cubeportfolio({
-            filters: '#js-filters-mosaic-flat',
-            layoutMode: 'mosaic',
-            defaultFilter: '*',
-            animationType: 'scaleSides',
-            gapHorizontal: -1,
-            gapVertical: -1,
-            gridAdjustment: 'responsive',
-            caption: 'zoom',
-            displayType: 'fadeIn',
-            displayTypeSpeed: 100,
-            sortByDimension: true,
-            mediaQueries: [{
-                width: 1500,
-                cols: 4
-            },{
-                width: 1100,
-                cols: 4
-            }, {
-                width: 768,
-                cols: 2
-            }, {
-                width: 480,
-                cols: 1
-            }, {
-                width: 320,
-                cols: 1
-            }],
-            // lightbox
-            lightboxDelegate: '.cbp-lightbox',
-            lightboxGallery: true,
-            lightboxTitleSrc: 'data-title',
-            lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
-
-            plugins: {
-                loadMore: {
-                    element: '#js-loadMore-mosaic-flat',
-                    action: 'click',
-                    loadItems: 3,
-                }
-            },
-        })
-
-        /*Blog Masonry*/
-        $("#blog-masonry").cubeportfolio({
-            layoutMode: 'grid',
-            defaultFilter: '*',
-            animationType: "scaleSides",
-            gapHorizontal: 30,
-            gapVertical: 30,
-            gridAdjustment: "responsive",
-            mediaQueries: [{
-                width: 1500,
-                cols: 3
-            }, {
-                width: 1100,
-                cols: 3
-            }, {
-                width: 992,
-                cols: 2
-            }, {
-                width: 600,
-                cols: 2
-            }, {
-                width: 480,
-                cols: 1
-            }, {
-                width: 320,
-                cols: 1
-            }]
+    // --- GLightbox Init ---
+    if (typeof GLightbox !== 'undefined') {
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true
         });
-        /*Portfolio Three*/
-        $('#js-grid-mosaic').cubeportfolio({
-            filters: '.filtering',
-            layoutMode: 'grid',
-            sortByDimension: true,
-            mediaQueries: [{
-                width: 1500,
-                cols: 2
-            },{
-                width: 1100,
-                cols: 2
-            }, {
-                width: 768,
-                cols: 2
-            }, {
-                width: 600,
-                cols: 2
-            }, {
-                width: 320,
-                cols: 1
-            }],
-            defaultFilter: '*',
-            animationType: 'fadeOut',
-            gapHorizontal: 20,
-            gapVertical: 60,
-            gridAdjustment: 'responsive',
-            caption: 'zoom',
+    }
 
-            // lightbox
-            lightboxDelegate: '.cbp-lightbox',
-            lightboxGallery: true,
-            lightboxTitleSrc: 'data-title',
-            lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
+    // --- Three.js Interactive Earth ---
+    const canvasContainer = document.getElementById('canvas-container');
+    if (canvasContainer && typeof THREE !== 'undefined') {
+        const scene = new THREE.Scene();
+        
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 15;
 
-            plugins: {
-                loadMore: {
-                    element: "#js-loadMore-lightbox-gallery",
-                    action: "click",
-                    loadItems: 5,
-                }
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        canvasContainer.appendChild(renderer.domElement);
+
+        // Create Earth Group
+        const earthGroup = new THREE.Group();
+        scene.add(earthGroup);
+
+        // Core Sphere
+        const geometry = new THREE.IcosahedronGeometry(5, 4);
+        const material = new THREE.MeshBasicMaterial({
+            color: 0x05050A,
+            wireframe: false
+        });
+        const earth = new THREE.Mesh(geometry, material);
+        earthGroup.add(earth);
+
+        // Wireframe Sphere (Neon Blue)
+        const wireframeMaterial = new THREE.MeshBasicMaterial({
+            color: 0x00D2FF,
+            wireframe: true,
+            transparent: true,
+            opacity: 0.15
+        });
+        const wireframe = new THREE.Mesh(geometry, wireframeMaterial);
+        wireframe.scale.set(1.01, 1.01, 1.01);
+        earthGroup.add(wireframe);
+
+        // Create circular texture for stars
+        const canvas = document.createElement('canvas');
+        canvas.width = 16;
+        canvas.height = 16;
+        const context = canvas.getContext('2d');
+        context.beginPath();
+        context.arc(8, 8, 8, 0, Math.PI * 2);
+        context.fillStyle = "white";
+        context.fill();
+        const starTexture = new THREE.CanvasTexture(canvas);
+
+        const createStarfield = (count, size, color, radiusOffset) => {
+            const geometry = new THREE.BufferGeometry();
+            const posArray = new Float32Array(count * 3);
+            for(let i = 0; i < count * 3; i++) {
+                const r = radiusOffset + Math.random() * 5;
+                const theta = Math.random() * 2 * Math.PI;
+                const phi = Math.acos(Math.random() * 2 - 1);
+                
+                posArray[i * 3] = r * Math.sin(phi) * Math.cos(theta);
+                posArray[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta);
+                posArray[i * 3 + 2] = r * Math.cos(phi);
             }
+            geometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+            const material = new THREE.PointsMaterial({
+                size: size, color: color, map: starTexture,
+                transparent: true, opacity: 0.8, alphaTest: 0.5
+            });
+            return new THREE.Points(geometry, material);
+        };
 
-        })
+        // Create 3 layers of stars for 3D parallax effect
+        const stars1 = createStarfield(400, 0.08, 0x3A7BD5, 8);
+        const stars2 = createStarfield(300, 0.05, 0x00D2FF, 10);
+        const stars3 = createStarfield(200, 0.1, 0xFFFFFF, 12);
+        
+        scene.add(stars1);
+        scene.add(stars2);
+        scene.add(stars3);
 
-    })(jQuery, window, document);
+        // Mouse interaction variables
+        let mouseX = 0;
+        let mouseY = 0;
+        let targetX = 0;
+        let targetY = 0;
 
+        const windowHalfX = window.innerWidth / 2;
+        const windowHalfY = window.innerHeight / 2;
 
-    /* ===================================
-       Fancy Box
-       ====================================== */
-    $('[data-fancybox]').fancybox({
-        protect: true,
-        animationEffect: "fade",
-        hash: null,
-    });
+        document.addEventListener('mousemove', (event) => {
+            mouseX = (event.clientX - windowHalfX);
+            mouseY = (event.clientY - windowHalfY);
+        });
 
-    /* ===================================
-       Rotating Text
-       ====================================== */
+        // Resize handler
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
 
-    $("#js-rotating").Morphext({
-        // The [in] animation type. Refer to Animate.css for a list of available animations.
-        animation: "flipInX",
-        // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
-        separator: ",",
-        // The delay between the changing of each phrase in milliseconds.
-        speed: 3000,
-        complete: function () {
-            // Called after the entrance animation is executed.
-        }
-    });
+        // Animation Loop
+        const clock = new THREE.Clock();
 
-    /* ===================================
-       Owl Carousel
-       ====================================== */
+        const animate = () => {
+            requestAnimationFrame(animate);
+            const elapsedTime = clock.getElapsedTime();
 
-    /* Testimonial */
-    $('.testimonial-two').owlCarousel({
-        items:1,
-        loop: true,
-        smartSpeed: 500,
-        responsiveClass: true,
-        nav: false,
-        dots: true,
-        dotsContainer: ".owl-thumbs",
-        autoplay: false,
-        autoplayHoverPause: true,
-        autoplayTimeout: 3000,
-        responsive: {
-            0: {
-                items: 1,
-                margin: 30,
-            },
-            480: {
-                items: 1,
-                margin: 30,
-            },
-            992: {
-                items: 1,
-                margin: 30,
-            }
-        }
-    });
+            targetX = mouseX * 0.001;
+            targetY = mouseY * 0.001;
 
-    /* Blog */
-    $(".owl-split").owlCarousel({
-        items: 1,
-        margin: 0,
-        dots: false,
-        nav: false,
-        loop: true,
-        autoplay: true,
-        smartSpeed:500,
-        navSpeed: true,
-        autoplayHoverPause:true,
-        responsiveClass:true
-    });
+            // Continuous auto-rotation for the meshes themselves
+            earth.rotation.y += 0.001;
+            earth.rotation.x += 0.0005;
+            wireframe.rotation.y += 0.001;
+            wireframe.rotation.x += 0.0005;
+            
+            // Continuous auto-rotation for stars at different speeds
+            stars1.rotation.y += 0.0001;
+            stars2.rotation.y += 0.0002;
+            stars3.rotation.y += 0.00005;
 
-    /* ===================================
-       Revolution Slider
-       ====================================== */
+            // Interactive parallax offset based on mouse position
+            earthGroup.rotation.y += 0.05 * (targetX - earthGroup.rotation.y);
+            earthGroup.rotation.x += 0.05 * (targetY - earthGroup.rotation.x);
+            
+            // Subtle interactive parallax for stars to enhance 3D feel
+            stars1.rotation.x += 0.02 * (targetY - stars1.rotation.x);
+            stars2.rotation.x += 0.01 * (targetY - stars2.rotation.x);
+            stars3.rotation.x += 0.03 * (targetY - stars3.rotation.x);
 
-    /*Design Studio*/
-    $("#rev_slider_8_1").show().revolution({
-        sliderType:"standard",
-        jsFileLocation:"//localhost/revslider/revslider/public/assets/js/",
-        sliderLayout:"fullscreen",
-        dottedOverlay:"none",
-        delay:9000,
-        navigation: {
-            keyboardNavigation:"off",
-            keyboard_direction: "horizontal",
-            mouseScrollNavigation:"off",
-            mouseScrollReverse:"default",
-            onHoverStop:"on",
-            touch:{
-                touchenabled:"on",
-                touchOnDesktop:"off",
-                swipe_threshold: 75,
-                swipe_min_touches: 50,
-                swipe_direction: "horizontal",
-                drag_block_vertical: false
-            }
-            ,
-            arrows: {
-                style:"uranus",
-                enable:false,
-                hide_onmobile:true,
-                hide_under:600,
-                hide_onleave:true,
-                hide_delay:200,
-                hide_delay_mobile:1200,
-                tmp:'<div class="hvr-pulse"></div>',
-                left: {
-                    h_align:"left",
-                    v_align:"center",
-                    h_offset:30,
-                    v_offset:0
-                },
-                right: {
-                    h_align:"right",
-                    v_align:"center",
-                    h_offset:30,
-                    v_offset:0
-                }
-            }
-            ,
-            bullets: {
-                enable:false,
-                hide_onmobile:true,
-                hide_under:600,
-                style:"hephaistos",
-                hide_onleave:true,
-                hide_delay:200,
-                hide_delay_mobile:1200,
-                direction:"horizontal",
-                h_align:"center",
-                v_align:"bottom",
-                h_offset:0,
-                v_offset:30,
-                space:5,
-                tmp:''
-            }
-        },
-        responsiveLevels:[1240,1024,778,480],
-        visibilityLevels:[1240,1024,778,480],
-        gridwidth:[1240,1024,778,480],
-        gridheight:[868,600,500,400],
-        lazyType:"smart",
-        parallax: {
-            type:"mouse",
-            origo:"slidercenter",
-            speed:2000,
-            speedbg:0,
-            speedls:0,
-            levels:[2,3,4,5,6,7,12,16,10,50,10,11,12,13,14,55],
-        },
-        shadow:0,
-        spinner:"off",
-        stopLoop:"off",
-        stopAfterLoops:-1,
-        stopAtSlide:-1,
-        shuffle:"off",
-        autoHeight:"off",
-        fullScreenAutoWidth:"off",
-        fullScreenAlignForce:"off",
-        fullScreenOffsetContainer: "",
-        fullScreenOffset: "",
-        hideThumbsOnMobile:"off",
-        hideSliderAtLimit:0,
-        hideCaptionAtLimit:0,
-        hideAllCaptionAtLilmit:0,
-        debugMode:false,
-        fallbacks: {
-            simplifyAll:"off",
-            nextSlideOnWindowFocus:"off",
-            disableFocusListener:false,
-        }
-    });
+            renderer.render(scene, camera);
+        };
+
+        animate();
+    }
 });
