@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Preloader ---
+    window.addEventListener('load', () => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+            }, 800); // Small delay to show the animation
+        }
+    });
+
     // --- Navbar Scroll ---
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
